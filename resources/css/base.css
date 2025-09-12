@@ -1,0 +1,31 @@
+:root {
+  --max: 1100px;
+  --morado: #41009d;      /* color principal */
+  --morado-2: #41009d;    /* alias si lo usabas */
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+/* Contenedor principal genérico */
+.container {
+  max-width: var(--max);
+  margin: 20px auto;
+  padding: 0 16px 24px;
+}
+
+/* Evitar scroll horizontal por desbordes del hero */
+html, body { overflow-x: hidden; }
+
+/* Variante de container sin margen arriba, solo abajo */
+.container-no-top {
+  max-width: var(--max);
+  margin: 0 auto 20px;   /* margen inferior, no superior */
+  padding: 0 16px 24px;
+}

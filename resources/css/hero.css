@@ -1,0 +1,151 @@
+/* Asegurar que no hay hueco entre header y carrusel */
+.site-header, .hero-carousel {
+  margin: 0;
+  padding: 0;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, figure {
+  margin: 0;
+}
+
+.hero-carousel {
+  display: block;
+  margin-top: -1px; /* por si quedaba un píxel de separación */
+}
+
+.site-header, .hero-carousel {
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --hero-h: min(72vh, 780px);
+  --hero-pad: clamp(16px, 4vw, 40px);
+  --hero-timing: 6s;  /* autoplay */
+}
+
+/* ===== HERO CAROUSEL ===== */
+.hero-carousel{
+  position: relative;
+  width: 100%;
+  height: var(--hero-h);
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  user-select: none;
+}
+
+/* Opción full-bleed si lo metes dentro de .container */
+.hero-carousel.full-bleed{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.hero-track{
+  height: 100%;
+  display: flex;
+  gap: 0;
+  transition: transform .6s cubic-bezier(.22,.61,.36,1);
+  will-change: transform;
+}
+
+.hero-slide{
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  margin: 0; /* reset figure */
+}
+.hero-slide img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(.78);
+  transform: none;
+}
+
+/* Texto superpuesto */
+.hero-caption{
+  position: absolute;
+  left: var(--hero-pad);
+  right: var(--hero-pad);
+  bottom: calc(var(--hero-pad) + 36px);
+  display: grid;
+  gap: 10px;
+}
+.hero-caption .kicker{
+  font-weight: 700;
+  font-size: clamp(12px, .9vw + .2rem, 16px);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .9;
+}
+.hero-caption h2{
+  margin: 0;
+  font-size: clamp(22px, 2.6vw + .4rem, 42px);
+  line-height: 1.15;
+  text-wrap: balance;
+  text-shadow: 0 2px 18px rgba(0,0,0,.45);
+  overflow-wrap: anywhere;
+}
+
+/* Botones */
+.hero-nav{
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px; height: 42px;
+  border: 0; border-radius: 999px;
+  background: rgba(255,255,255,.85);
+  color: #111;
+  font-size: 26px;
+  display: grid; place-items: center;
+  cursor: pointer;
+  transition: transform .06s ease, background .2s ease;
+}
+.hero-nav:hover{ background:#fff; transform: translateY(-50%) scale(1.03); }
+.hero-nav.prev{ left: 14px; }
+.hero-nav.next{ right: 14px; }
+
+/* Barras */
+.hero-bars{
+  position: absolute; z-index: 2;
+  left: var(--hero-pad); right: var(--hero-pad);
+  bottom: var(--hero-pad);
+  display: flex; gap: 10px; align-items: center;
+}
+.hero-bars .bar{
+  --h: 4px;
+  flex: 1 1 0;
+  height: var(--h);
+  border-radius: 999px;
+  background: rgba(255,255,255,.35);
+  position: relative;
+  overflow: hidden;
+  border: 0; cursor: pointer;
+}
+.hero-bars .bar::after{
+  content: "";
+  position: absolute; inset: 0;
+  background: #fff;
+  width: 0%;
+  transition: width .2s linear;
+}
+.hero-bars .bar.is-active::after{
+  animation: fill var(--hero-timing) linear forwards;
+}
+@keyframes fill{ from{width:0%} to{width:100%} }
+
+/* Responsive */
+@media (max-width: 640px){
+  :root{ --hero-h: 58vh; }
+  .hero-nav{ display:none; }
+}
+

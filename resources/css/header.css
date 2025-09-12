@@ -1,0 +1,102 @@
+/* ===== HEADER ===== */
+.site-header {
+  background: var(--morado);
+  color: #fff;
+}
+
+/* Fila superior (logo izq + redes dcha) */
+.topbar {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+
+.club-name {
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: .3px;
+  line-height: 1;
+}
+
+/* Redes sociales */
+.social {
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background .18s ease, transform .06s ease, opacity .18s ease;
+  opacity: .95;
+  font-size: 30px;
+}
+.social-link:hover {
+  background: rgba(255,255,255,.18);
+  transform: translateY(-1px);
+  opacity: 1;
+}
+
+/* Menú (debajo del logo) */
+:root { --menu-font: clamp(15px, 1.2vw + 0.2rem, 20px); }
+
+.menu {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 6px 16px 12px 16px;
+  display: flex;
+  gap: 8px;
+}
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: .2px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: background .18s ease, transform .06s ease;
+  font-size: var(--menu-font);
+  line-height: 1.1;
+}
+.menu-link:hover { background: rgba(255,255,255,.14); transform: translateY(-1px); }
+.menu-link.active { background: rgba(255,255,255,.22); }
+
+/* Responsive header */
+@media (max-width: 720px){
+  .logo { height: 60px; }
+  .club-name { font-size: 18px; }
+}
+@media (max-width: 520px){
+  .topbar {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    row-gap: 8px;
+  }
+  .social { gap: 6px; }
+  .menu { padding-top: 4px; gap: 6px; flex-wrap: wrap; }
+  .menu-link { font-size: 16px; padding: 8px 12px; border-radius: 10px; }
+}

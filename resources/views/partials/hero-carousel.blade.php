@@ -1,4 +1,4 @@
-<section class="hero-carousel" aria-label="Galería" data-interval="6">
+<section class="hero-carousel full-bleed" aria-label="Galería" data-interval="6">
   <button class="hero-nav prev" aria-label="Anterior">‹</button>
   <button class="hero-nav next" aria-label="Siguiente">›</button>
 

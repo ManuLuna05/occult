@@ -9,7 +9,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
   {{-- Vite (CSS/JS) --}}
-  @vite(['resources/css/inicio.css','resources/js/carrusel.js'])
+  @vite([
+    'resources/css/base.css',
+    'resources/css/header.css',
+    'resources/css/hero.css',
+    'resources/css/squad.css',
+    'resources/css/player-card.css',
+    'resources/js/carrusel.js'
+  ])
+
 </head>
 <body>
   @include('partials.header')
