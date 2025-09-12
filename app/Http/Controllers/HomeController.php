@@ -164,7 +164,7 @@ class HomeController extends Controller
             ],
             [
                 'number'  => 7,
-                'name'    => 'Tom (Fox)',
+                'name'    => 'Tom Fox',
                 'role'    => 'Delantero',
                 'photo'   => 'player.jpg',
                 'minutes' => 0,
