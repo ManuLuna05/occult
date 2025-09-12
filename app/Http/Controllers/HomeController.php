@@ -171,6 +171,15 @@ class HomeController extends Controller
                 'goals'   => 0,
                 'matches' => 0,
             ],
+                        [
+                'number'  => 95,
+                'name'    => 'Juanpe',
+                'role'    => 'Delantero',
+                'photo'   => 'jp.jpg',
+                'minutes' => 0,
+                'goals'   => 0,
+                'matches' => 0,
+            ],
             // ...más jugadores
         ];
 
