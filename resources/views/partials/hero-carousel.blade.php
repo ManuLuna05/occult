@@ -4,27 +4,33 @@
 
   <div class="hero-track">
     <figure class="hero-slide is-active">
-      <img src="{{ Vite::asset('resources/images/camisetas.jpg') }}" alt="..." />
-      <figcaption class="hero-caption">
-        <span class="kicker">CAMISETAS</span>
-        <h2>Esta es la nueva piel para la temporada 2025/26</h2>
-      </figcaption>
+      <a href="https://tusitio.com/camisetas">
+        <img src="{{ Vite::asset('resources/images/camisetas.jpg') }}" alt="Camisetas" />
+        <figcaption class="hero-caption">
+          <span class="kicker">CAMISETAS</span>
+          <h2>Esta es la nueva piel para la temporada 2025/26</h2>
+        </figcaption>
+      </a>
     </figure>
 
     <figure class="hero-slide">
-      <img src="{{ Vite::asset('resources/images/hero2.jpg') }}" alt="..." />
-      <figcaption class="hero-caption">
-        <span class="kicker">PRIMER EQUIPO</span>
-        <h2>Sesión matinal en el campo 2</h2>
-      </figcaption>
+      <a href="https://www.twitch.tv/occultfc">
+        <img src="{{ Vite::asset('resources/images/twitch.jpg') }}" alt="Twitch" />
+        <figcaption class="hero-caption">
+          <span class="kicker">SOCIAL</span>
+          <h2>Partidos del Occult retransmitidos en Twitch</h2>
+        </figcaption>
+      </a>
     </figure>
 
     <figure class="hero-slide">
-      <img src="{{ Vite::asset('resources/images/hero3.jpg') }}" alt="..." />
-      <figcaption class="hero-caption">
-        <span class="kicker">CANTERA</span>
-        <h2>Gran papel en el torneo de verano</h2>
-      </figcaption>
+      <a href="http://127.0.0.1:8000/">
+        <img src="{{ Vite::asset('resources/images/dorsales.jpg') }}" alt="Dorsales" />
+        <figcaption class="hero-caption">
+          <span class="kicker">DORSALES</span>
+          <h2>Estos son los dorsales que vestiran los nuestros en la temporada 25/26</h2>
+        </figcaption>
+      </a>
     </figure>
   </div>
 </section>

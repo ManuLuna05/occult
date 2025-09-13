@@ -1,0 +1,156 @@
+/* ======== PARTIDOS · estilo pro inspirado en Málaga CF ======== */
+/* Paleta del club */
+:root{
+  --club: #41009d;      /* morado */
+  --black: #0b0d12;     /* negro suave para UI */
+  --white: #ffffff;
+
+  --bg: #f6f8fb;        /* fondo gris muy claro */
+  --text: #0f1220;      /* texto principal */
+  --muted: #6b7280;     /* texto secundario */
+  --line: #e7eaf0;      /* bordes */
+  --card: #ffffff;      /* tarjetas claras */
+  --card-dark: #0e1330; /* tarjeta oscura estilo “siguiente” */
+
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(16, 23, 40, .08);
+}
+
+*{ box-sizing:border-box }
+html,body{ margin:0; padding:0 }
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* Container */
+.mc-container{ max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.mc-page-head{ padding: 24px 0 8px; }
+.mc-page-head h1{ margin:0; font-size: 32px; font-weight: 900; }
+
+/* -------- Mes -------- */
+.mc-month{ margin-top: 28px; }
+.mc-month__title{
+  font-size: 20px; font-weight:900; color: #1f2433;
+  margin: 0 0 14px; padding: 0 6px;
+}
+
+/* -------- Fila de lista -------- */
+.mc-row{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 14px 18px;
+  margin: 12px 0;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+.mc-row__meta{ display:flex; align-items:center; gap:8px; color:var(--muted); font-weight:800; }
+
+.mc-chip{
+  display:inline-flex; align-items:center; height:26px; padding:0 12px;
+  background: rgba(65,0,157,.08); color: var(--club);
+  border: 1px solid rgba(65,0,157,.25); border-radius: 999px;
+  font-size:12px; font-weight:900; letter-spacing:.2px;
+}
+.mc-bullet{
+  display:inline-flex; align-items:center; height:24px; padding:0 8px;
+  background:#eef0f7; color:#20263a; border-radius:999px; font-weight:900; font-size:12px;
+}
+
+.mc-row__content{
+  display:grid;
+  grid-template-columns: 1fr 240px 1fr;
+  gap: 14px; align-items:center;
+}
+.mc-team{ display:flex; align-items:center; gap:10px; font-weight:800; }
+.mc-team--away{ justify-content:flex-end; }
+.mc-team__crest{ width:28px; height:28px; object-fit:contain; }
+.mc-team__name{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+.mc-center{ text-align:center; }
+.mc-center__date{ display:block; font-size:12px; color:var(--muted); font-weight:800; margin-bottom:2px; }
+.mc-center__score{
+  display:flex; justify-content:center; align-items:baseline; gap:8px;
+  font-size:22px; font-weight:900;
+}
+.mc-center__score i{ font-style:normal; opacity:.6; }
+.mc-center__score--pending{ opacity:.4; }
+.mc-center__pill{
+  display:inline-block; padding:6px 10px; border-radius:10px;
+  background: var(--black); color: var(--white); font-weight:900; font-size:13px;
+}
+
+/* -------- Dúo: anterior / siguiente -------- */
+.mc-grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 26px; }
+
+.mc-card{
+  border-radius: 16px; overflow:hidden;
+  box-shadow: var(--shadow);
+  display:flex; flex-direction:column; min-height: 280px;
+}
+.mc-card--light{ background: var(--card); border:1px solid var(--line); }
+.mc-card--dark{ background: var(--card-dark); color: var(--white); }
+
+.mc-card__head{
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+}
+.mc-card--dark .mc-card__head{ border-bottom: 1px solid rgba(255,255,255,.08); }
+
+.mc-card__head h3{ margin:0; font-size:18px; font-weight:900; }
+.mc-card__tags{ display:flex; gap:8px; align-items:center; }
+
+.mc-chip--invert{
+  color: var(--white);
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+}
+.mc-bullet--invert{ background: rgba(255,255,255,.12); color: #fff; }
+
+.mc-card__body{ padding: 18px; display:flex; flex-direction:column; gap:14px; }
+.mc-meta-line{ display:flex; gap:10px; align-items:center; color:var(--muted); font-weight:800; }
+.mc-meta-line--invert{ color: rgba(255,255,255,.75); }
+
+.mc-card__teams{
+  display:grid; grid-template-columns: 1fr 220px 1fr; gap: 16px; align-items:center;
+}
+.mc-card__center{ text-align:center; }
+.mc-card__score{ font-size:26px; font-weight:900; }
+.mc-card__score i{ font-style:normal; opacity:.6; }
+.mc-card__date{ display:block; margin-top: 6px; color: var(--muted); font-weight:800; }
+.mc-card--dark .mc-card__date{ color: rgba(255,255,255,.75); }
+
+.mc-status{
+  display:inline-flex; align-items:center; height:34px; padding: 0 14px;
+  border-radius: 10px; font-weight:900; font-size:12px;
+  background: rgba(65,0,157,.10); color: var(--club); border:1px solid rgba(65,0,157,.25);
+}
+.mc-pill{
+  display:inline-flex; align-items:center; height:36px; padding:0 14px;
+  border-radius:12px; background: var(--club); color: var(--white); font-weight:900;
+}
+.mc-live-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  height:36px; padding:0 14px; border-radius:999px; font-weight:900; text-decoration:none;
+  background: var(--white); color: var(--black);
+}
+.mc-card--dark .mc-live-btn{ background: var(--club); color: var(--white); }
+
+.mc-card__foot{ margin-top:auto; padding: 0 18px 18px; }
+
+/* -------- Responsive -------- */
+@media (max-width: 980px){
+  .mc-grid2{ grid-template-columns: 1fr; }
+}
+@media (max-width: 760px){
+  .mc-row{ grid-template-columns: 1fr; }
+  .mc-row__content{ grid-template-columns: 1fr; text-align:center; }
+  .mc-team, .mc-team--away{ justify-content:center; }
+  .mc-card__teams{ grid-template-columns: 1fr; text-align:center; }
+}

@@ -1,0 +1,217 @@
+/* ===== Contenido general ===== */
+.contenido {
+  padding-top: 10px;
+}
+
+.contenido-head h1 {
+  margin: 0 0 6px;
+  font-size: clamp(26px, 2.6vw + .4rem, 40px);
+  font-weight: 800;
+  letter-spacing: .3px;
+  color: #41009d;
+}
+
+.contenido-head p {
+  margin: 0 0 14px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.media-section {
+  margin: 24px 0 32px;
+}
+
+.section-title {
+  margin: 0 0 14px;
+  font-size: clamp(20px, 1.8vw + .3rem, 28px);
+  font-weight: 800;
+  color: #41009d; /* color club */
+}
+
+/* ===== Vídeos ===== */
+.videos-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.video-card {
+  background: #41009d;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+  padding: 12px 12px 14px;
+}
+
+.video-title {
+  margin: 10px 6px 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* Proporción 16:9 responsive para iframes y videos */
+.ratio {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+}
+.ratio::before { content: ""; display: block; padding-top: 56.25%; } /* 16:9 */
+.ratio > * {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0; object-fit: cover;
+}
+
+/* ===== Fotos ===== */
+.photo-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.photo {
+  display: block;
+  background: #f2f2f2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,.06);
+  transition: transform .08s ease, box-shadow .2s ease;
+}
+.photo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+.photo img {
+  display: block;
+  width: 100%; height: 200px;
+  object-fit: cover;
+}
+
+/* ===== Lightbox CSS-only (:target) ===== */
+.lightbox {
+  position: fixed; inset: 0;
+  display: none;
+  background: rgba(0,0,0,.8);
+  z-index: 9999;
+  align-items: center; justify-content: center;
+  padding: clamp(12px, 4vw, 40px);
+}
+.lightbox:target { display: flex; }
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.lightbox__close {
+  position: fixed;
+  top: 12px; right: 16px;
+  font-size: 38px;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  opacity: .9;
+}
+.lightbox__close:hover { opacity: 1; }
+
+/* Responsive ajustes */
+@media (max-width: 560px) {
+  .photo img { height: 160px; }
+}
+
+/* ===== Artículos ===== */
+.articles-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.article-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .12s ease, box-shadow .2s ease;
+}
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+.article-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.article-body { padding: 14px 16px 18px; }
+.article-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #41009d;
+  margin: 0 0 6px;
+}
+.article-excerpt {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+  margin: 0;
+}
+
+/* ===== Modal de artículo ===== */
+.article-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  z-index: 10000;
+  overflow-y: auto;
+}
+.article-modal:target { display: flex; }
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+  text-align: center;
+}
+.modal-content img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.modal-content h2 {
+  font-size: 22px;
+  font-weight: 900;
+  color: #41009d;
+  margin: 0 0 12px;
+}
+.modal-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Botón cerrar */
+.modal-close {
+  position: fixed;
+  top: 20px; right: 24px;
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  z-index: 10001;
+}

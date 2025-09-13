@@ -1,0 +1,155 @@
+/* ===== Cabecera de sección ===== */
+.tabla-head h1{
+  margin: 0 0 6px;
+  font-size: clamp(24px, 2.4vw + .4rem, 36px);
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+.tabla-head p{
+  margin: 0 0 12px;
+  color: #6b7280;
+  font-weight: 600;
+}
+.tabla-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.btn{
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .2px;
+  transition: transform .06s ease, background .18s ease, opacity .18s ease;
+}
+.btn-primary{
+  background: #41009d; color: #fff;
+}
+.btn-primary:hover{ background:#5211bd; transform: translateY(-1px); }
+.btn-secondary{
+  background: #f0f0f0; color:#222;
+}
+.btn-secondary:hover{ background:#e9e9e9; transform: translateY(-1px); }
+
+/* ===== Iframe full-bleed pegado a los bordes ===== */
+.iframe-wrap.full-bleed{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  /* alto visible del área embebida */
+  min-height: min(78vh, 820px);
+  position: relative;
+  background: #000; /* fondo mientras carga */
+}
+.tabla-iframe{
+  width: 100%;
+  height: min(78vh, 820px);
+  border: 0;
+  display: block;
+}
+
+/* Fallback visible si el iframe no pinta nada */
+.iframe-fallback{
+  position: absolute; inset: 0;
+  display: none;                /* oculto por defecto */
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 24px;
+  color: #fff;
+  background: rgba(0,0,0,.6);
+}
+.iframe-wrap:has(> .tabla-iframe:where(:not(:defined))) .iframe-fallback{ display:flex; }
+/* Truco: si el iframe no llega a renderizar (bloqueo), forzamos mostrar fallback en móviles */
+@media (max-width: 640px){
+  .iframe-fallback{ display:flex; }
+}
+
+/* ===== Tabla local (fallback) ===== */
+.tabla-local{
+  margin: 22px 0 28px;
+}
+.tabla-local h2{
+  margin: 0 0 12px;
+  font-size: clamp(18px, 1.4vw + .4rem, 24px);
+  font-weight: 800;
+  color: #41009d;
+}
+.tabla-scroll{
+  overflow: auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+}
+.tabla{
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  min-width: 720px; /* scroll horizontal en pantallas estrechas */
+}
+.tabla thead th{
+  position: sticky; top: 0;
+  background: #f7f6ff;
+  color: #41009d;
+  font-weight: 900;
+  text-align: left;
+  border-bottom: 2px solid #e6e0ff;
+  padding: 12px 10px;
+  font-size: 14px;
+}
+.tabla tbody td{
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+.tabla tbody tr:hover{
+  background: #fafafa;
+}
+.tabla tbody td:nth-child(1){
+  width: 56px;
+  font-weight: 900;
+}
+
+/* Nota al pie */
+.nota{
+  color:#6b7280;
+  font-size: 13px;
+  margin: 8px 2px 0;
+}
+
+/* Destacar nuestro equipo */
+.tabla tbody tr.is-our-team {
+  background: #fff6d6;              /* fondo suave distinto */
+  border-left: 6px solid #41009d;   /* acento a la izquierda */
+  font-weight: 800;
+}
+.tabla tbody tr.is-our-team:hover {
+  background: #ffefbf;              /* un pelín más intenso al hover */
+}
+.tabla tbody tr.is-our-team td:nth-child(2) {
+  color: #2b2b2b;                   /* nombre bien legible */
+}
+
+/* Logo + nombre */
+.team-cell{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.team-logo{
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 50%;          /* opcional: redondo */
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
+
+/* (opcional) si el escudo tiene fondo blanco y quieres borde fino */
+.team-logo{ border: 1px solid rgba(0,0,0,.08); }
+
+/* Ya tenías la fila destacada */
+.tabla tbody tr.is-our-team{
+  background: #fff6d6;
+  border-left: 6px solid #41009d;
+  font-weight: 800;
+}

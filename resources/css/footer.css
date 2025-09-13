@@ -1,0 +1,73 @@
+/* ===== FOOTER ===== */
+.site-footer {
+  background: var(--morado); /* negro club */
+  color: #fff;
+  padding-top: 40px;
+  margin-top: 60px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Columna */
+.footer-col { display:flex; flex-direction:column; gap:12px; }
+.footer-title {
+  font-size: 22px; font-weight:900;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+.footer-subtitle {
+  font-size: 16px; font-weight:800;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.footer-text { color: #ccc; margin:0; }
+
+/* Enlaces */
+.footer-links, .footer-contact {
+  list-style: none; margin:0; padding:0;
+}
+.footer-links li, .footer-contact li { margin:6px 0; }
+.footer-links a, .footer-contact a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+.footer-links a:hover, .footer-contact a:hover {
+  color: #000000;
+}
+
+/* Redes sociales */
+.footer-socials {
+  display:flex; gap:12px; margin-top:10px;
+}
+.footer-socials a {
+  width:36px; height:36px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:50%;
+  background: #ffffff;
+  color: #41009d;
+  font-size:16px;
+  transition: background .2s ease, transform .2s ease;
+}
+.footer-socials a:hover {
+  background: #000000; color:#ffffff;
+  transform: translateY(-2px);
+}
+
+/* Línea inferior */
+.footer-bottom {
+  margin-top: 30px;
+  padding: 16px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.1);
+  font-size: 13px;
+  color: #aaa;
+}
