@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','Calendario | Occult FC')
 
 @section('content')
 {{-- resources/views/calendario.blade.php --}}

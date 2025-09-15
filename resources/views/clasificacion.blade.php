@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Clasificación')
+@section('title','Clasificación | Occult FC')
 
 @section('content')
   {{-- Cabecera simple --}}

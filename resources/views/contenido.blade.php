@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Contenido')
+@section('title','Contenido | Occult FC')
 
 @section('content')
   <div class="container contenido">

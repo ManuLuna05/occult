@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Occult FC')
+@section('title','Occult FC | Web Oficial')
 
 @section('content')
   {{-- Carrusel: ocupa todo el ancho y se pega al header --}}
