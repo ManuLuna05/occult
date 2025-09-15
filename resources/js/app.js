@@ -1,5 +1,5 @@
 import './bootstrap'; // si lo tienes
-import { initHeroCarousel } from './heroCarousel';
+import { initHeroCarousel } from './carrusel';
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeroCarousel(); // o initHeroCarousel('.mi-selector');
