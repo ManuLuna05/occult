@@ -71,3 +71,94 @@
   font-size: 13px;
   color: #aaa;
 }
+
+/* ==== Bloque de patrocinadores centrado ==== */
+.footer-sponsors{
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.footer-sponsors .footer-subtitle{
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff; /* o tu color de texto */
+}
+
+.sponsor-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.sponsor-row a img{
+  max-height: 64px;
+  width: auto;
+  filter: grayscale(100%) opacity(.85);
+  transition: filter .2s ease, transform .2s ease;
+}
+
+.sponsor-row a:hover img{
+  filter: none;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 520px){
+  .sponsor-row{ gap: 16px; }
+  .sponsor-row a img{ max-height: 28px; }
+}
+
+/* === Compactar el espacio alrededor de los patrocinadores === */
+.footer-sponsors{
+  margin: 0 auto 14px;        /* antes 8px auto 20px */
+}
+
+.footer-sponsors .footer-subtitle{
+  margin-bottom: 10px;        /* antes 14px */
+}
+
+/* Menos separación con la línea inferior */
+.footer-bottom{
+  margin-top: 16px;           /* antes 30px */
+  padding-top: 12px;          /* antes 16px */
+}
+
+/* Reducir espacio entre columnas del grid y patrocinadores */
+.footer-container{
+  row-gap: 12px;                 /* antes gap: 30px afectaba también en vertical */
+}
+
+/* Subimos el bloque de patrocinadores */
+.footer-sponsors{
+  margin-top: -10px;             /* tira del bloque hacia arriba */
+  margin-bottom: 12px;           /* un poco más cerca de la línea inferior */
+}
+
+/* Logos un pelín más juntos */
+.sponsor-row{ gap: 20px; }
+
+/* Aún menos separación con la línea inferior del footer */
+.footer-bottom{
+  margin-top: 12px;              /* antes 16px */
+  padding-top: 10px;             /* antes 12–16px */
+}
+
+/* ==== Sponsors responsivos (más grandes en móvil/tablet) ==== */
+.sponsor-row a img{
+  height: clamp(40px, 6vw, 80px);   /* crece con el viewport */
+  max-height: none;                 /* quita el tope que los encogía */
+  width: auto;
+  object-fit: contain;
+}
+
+/* En móviles: que no se queden mínimos */
+@media (max-width: 520px){
+  .sponsor-row{ gap: 18px; }
+  .sponsor-row a img{
+    height: clamp(42px, 12vw, 60px); /* subimos el mínimo en móvil */
+  }
+}
+
+/* Si notas que en desktop muy ancho crecen demasiado, baja el 80px del clamp a 72px */

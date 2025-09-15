@@ -4,7 +4,7 @@
 
   <div class="hero-track">
     <figure class="hero-slide is-active">
-      <a href="https://tusitio.com/camisetas">
+      <a href="/contenido">
         <img src="{{ Vite::asset('resources/images/camisetas.jpg') }}" alt="Camisetas" />
         <figcaption class="hero-caption">
           <span class="kicker">CAMISETAS</span>

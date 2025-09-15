@@ -58,9 +58,9 @@
           </thead>
           <tbody>
             <tr class="is-our-team">
-              <td>10</td>
+              <td>11</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Escudo Occult FC">
+                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
                 <span>Occult FC</span>
               </td>
               <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
@@ -69,8 +69,8 @@
             <tr>
               <td>12</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/cachorros.jpg') }}" alt="Escudo Rivales FC">
-                <span>Rayo Mezquita</span>
+                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/solteria.png') }}" alt="Soltería">
+                <span>Soltería FC</span>
               </td>
               <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
             </tr>
@@ -78,8 +78,8 @@
             <tr>
               <td>13</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/solteria.jpg') }}" alt="Escudo Rivales FC">
-                <span>Soltería FC</span>
+                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/titanes.png') }}" alt="titanes">
+                <span>Titanes del Sur</span>
               </td>
               <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
             </tr>

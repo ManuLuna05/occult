@@ -34,6 +34,21 @@
 
   </div>
 
+  <footer class="site-footer">
+  <div class="footer-container">
+    <!-- tus tres columnas -->
+  </div>
+
+  <!-- Bloque de patrocinadores centrado -->
+  <div class="footer-sponsors">
+    <h4 class="footer-subtitle">Patrocinadores</h4>
+    <div class="sponsor-row">
+      <a href="#"><img src="{{ Vite::asset('resources/images/escudos/liga.png') }}" alt="Patrocinador 1"></a>
+      <a href="#"><img src="{{ Vite::asset('resources/images/sponsors/dzalg.png') }}" alt="Patrocinador 2"></a>
+      <a href="#"><img src="{{ Vite::asset('resources/images/sponsors/lione.png') }}" alt="Patrocinador 3"></a>
+    </div>
+  </div>
+
   <!-- Línea inferior -->
   <div class="footer-bottom">
     <p>© {{ date('Y') }} Occult FC · Todos los derechos reservados</p>

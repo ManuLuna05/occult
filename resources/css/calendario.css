@@ -1,60 +1,48 @@
-/* ======== PARTIDOS · estilo pro inspirado en Málaga CF ======== */
-/* Paleta del club */
+/* ======== CALENDARIO PRO (Fútbol) ======== */
+/* Paleta del club (ajusta --club) */
 :root{
-  --club: #41009d;      /* morado */
-  --black: #0b0d12;     /* negro suave para UI */
+  --club: #138d75;      /* color principal del club */
+  --black: #0b0d12;
   --white: #ffffff;
 
-  --bg: #f6f8fb;        /* fondo gris muy claro */
-  --text: #0f1220;      /* texto principal */
-  --muted: #6b7280;     /* texto secundario */
-  --line: #e7eaf0;      /* bordes */
-  --card: #ffffff;      /* tarjetas claras */
-  --card-dark: #0e1330; /* tarjeta oscura estilo “siguiente” */
+  --bg: #f6f8fb;
+  --text: #0f1220;
+  --muted: #6b7280;
+  --line: #e7eaf0;
+  --card: #ffffff;
+  --card-dark: #401266;
 
-  --radius: 16px;
+  --radius: 18px;       /* unificado para cards */
   --shadow: 0 10px 30px rgba(16, 23, 40, .08);
 }
 
 *{ box-sizing:border-box }
 html,body{ margin:0; padding:0 }
 body{
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   color: var(--text);
   background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Container */
 .mc-container{ max-width: 1120px; margin: 0 auto; padding: 0 20px; }
-.mc-page-head{ padding: 24px 0 8px; }
-.mc-page-head h1{ margin:0; font-size: 32px; font-weight: 900; }
+.mc-page-head{ padding: 28px 0 8px; }
+.mc-page-head h1{ margin:0; font-size: 34px; font-weight: 900; letter-spacing:-0.02em; }
+.mc-sub{ margin:6px 0 0; color:var(--muted); font-weight:700; }
 
 /* -------- Mes -------- */
 .mc-month{ margin-top: 28px; }
 .mc-month__title{
   font-size: 20px; font-weight:900; color: #1f2433;
-  margin: 0 0 14px; padding: 0 6px;
+  margin: 0 0 14px; padding: 0 6px; letter-spacing:.02em;
 }
 
-/* -------- Fila de lista -------- */
-.mc-row{
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: var(--shadow);
-  padding: 14px 18px;
-  margin: 12px 0;
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 16px;
-  align-items: center;
-}
-.mc-row__meta{ display:flex; align-items:center; gap:8px; color:var(--muted); font-weight:800; }
-
+/* -------- Chips / Bullets -------- */
 .mc-chip{
   display:inline-flex; align-items:center; height:26px; padding:0 12px;
-  background: rgba(65,0,157,.08); color: var(--club);
-  border: 1px solid rgba(65,0,157,.25); border-radius: 999px;
+  background: color-mix(in srgb, var(--club) 12%, transparent); color: var(--club);
+  border: 1px solid color-mix(in srgb, var(--club) 28%, transparent); border-radius: 999px;
   font-size:12px; font-weight:900; letter-spacing:.2px;
 }
 .mc-bullet{
@@ -62,95 +50,211 @@ body{
   background:#eef0f7; color:#20263a; border-radius:999px; font-weight:900; font-size:12px;
 }
 
+/* ===================== LISTA MENSUAL · FILAS DE PARTIDO ===================== */
+.mc-row{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+
+  /* centrado real sin solapes */
+  position: relative;
+  padding: 44px 18px 16px;          /* sitio para las chips arriba */
+  margin: 12px 0;
+  display: grid;
+  grid-template-columns: 1fr;       /* 1 sola columna; el meta no empuja */
+  gap: 16px;
+  align-items: center;
+}
+.mc-row__meta{
+  display:flex; align-items:center; gap:8px; color:var(--muted); font-weight:800;
+  position:absolute; left:18px; top:12px;
+}
+
 .mc-row__content{
+  position: static !important;
   display:grid;
-  grid-template-columns: 1fr 240px 1fr;
-  gap: 14px; align-items:center;
+  grid-template-columns: minmax(0,1fr) minmax(180px,auto) minmax(0,1fr); /* local | centro | visitante */
+  align-items: center;
+  gap:16px;
 }
 .mc-team{ display:flex; align-items:center; gap:10px; font-weight:800; }
 .mc-team--away{ justify-content:flex-end; }
+.mc-row__content .mc-team{ justify-self:start; min-width:0; }
+.mc-row__content .mc-team.mc-team--away{ justify-self:end; }
 .mc-team__crest{ width:28px; height:28px; object-fit:contain; }
 .mc-team__name{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 
 .mc-center{ text-align:center; }
+.mc-row__content .mc-center{
+  position: static !important;
+  transform:none !important;
+  justify-self:center;
+  text-align:center;
+  width:auto;
+  max-width: 260px;                 /* evita saltos raros */
+}
 .mc-center__date{ display:block; font-size:12px; color:var(--muted); font-weight:800; margin-bottom:2px; }
 .mc-center__score{
   display:flex; justify-content:center; align-items:baseline; gap:8px;
-  font-size:22px; font-weight:900;
+  font-size:20px; font-weight:900;  /* compacto */
 }
 .mc-center__score i{ font-style:normal; opacity:.6; }
-.mc-center__score--pending{ opacity:.4; }
 .mc-center__pill{
   display:inline-block; padding:6px 10px; border-radius:10px;
   background: var(--black); color: var(--white); font-weight:900; font-size:13px;
 }
 
-/* -------- Dúo: anterior / siguiente -------- */
-.mc-grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 26px; }
+/* ===================== CARDS ANTERIOR / SIGUIENTE (UNIFICADAS) ===================== */
+.mc-grid2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-top: 26px;
+}
 
 .mc-card{
-  border-radius: 16px; overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-height: 280px;
+  border-radius: var(--radius);
   box-shadow: var(--shadow);
-  display:flex; flex-direction:column; min-height: 280px;
+  overflow:hidden;
 }
-.mc-card--light{ background: var(--card); border:1px solid var(--line); }
-.mc-card--dark{ background: var(--card-dark); color: var(--white); }
+.mc-card--light{ background: var(--card); border:1px solid var(--line); color: var(--text); }
+.mc-card--dark{ background: var(--card-dark); color: #fff; }
 
+/* Header */
 .mc-card__head{
   display:flex; align-items:center; justify-content:space-between;
-  padding: 16px 18px;
+  padding: 14px 18px;
   border-bottom: 1px solid var(--line);
 }
 .mc-card--dark .mc-card__head{ border-bottom: 1px solid rgba(255,255,255,.08); }
-
 .mc-card__head h3{ margin:0; font-size:18px; font-weight:900; }
 .mc-card__tags{ display:flex; gap:8px; align-items:center; }
 
-.mc-chip--invert{
-  color: var(--white);
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.18);
+/* chips del header adaptadas al fondo */
+.mc-card--dark .mc-chip{ background: rgba(255,255,255,.1); color:#fff; border:1px solid rgba(255,255,255,.2); }
+.mc-card--dark .mc-bullet{ background: rgba(255,255,255,.1); color:#fff; }
+
+/* Body */
+.mc-card__body{
+  display:flex; flex-direction:column; gap: 14px;
+  padding: 16px 18px 20px;
 }
-.mc-bullet--invert{ background: rgba(255,255,255,.12); color: #fff; }
+.mc-card__date{
+  display:block; text-align:center; margin: 0 auto 4px;
+  color: var(--muted); font-weight:800; font-size:11px;
+}
+.mc-card--dark .mc-card__date{ color: rgba(255,255,255,.85); }
 
-.mc-card__body{ padding: 18px; display:flex; flex-direction:column; gap:14px; }
-.mc-meta-line{ display:flex; gap:10px; align-items:center; color:var(--muted); font-weight:800; }
-.mc-meta-line--invert{ color: rgba(255,255,255,.75); }
-
+/* Scoreboard simétrico */
 .mc-card__teams{
-  display:grid; grid-template-columns: 1fr 220px 1fr; gap: 16px; align-items:center;
+  display:grid;
+  grid-template-columns: minmax(0,1fr) 180px minmax(0,1fr); /* centro fijo */
+  align-items:center;
+  gap: 16px;
 }
-.mc-card__center{ text-align:center; }
-.mc-card__score{ font-size:26px; font-weight:900; }
-.mc-card__score i{ font-style:normal; opacity:.6; }
-.mc-card__date{ display:block; margin-top: 6px; color: var(--muted); font-weight:800; }
-.mc-card--dark .mc-card__date{ color: rgba(255,255,255,.75); }
+.mc-card .mc-team{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:8px; min-width:0; text-align:center;
+}
+.mc-card .mc-team__crest{ width:32px; height:32px; object-fit:contain; }
+.mc-card .mc-team__name{ font-size:14px; font-weight:800; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 
+.mc-card__center{ display:flex; flex-direction:column; align-items:center; gap:6px; text-align:center; }
+.mc-card__score{ font-size:22px; font-weight:900; line-height:1; }
+.mc-card__score i{ font-style:normal; opacity:.55; }
+
+/* Footer (estado / CTA) */
+.mc-card__foot{ margin-top:auto; padding: 0 18px 18px; }
 .mc-status{
-  display:inline-flex; align-items:center; height:34px; padding: 0 14px;
-  border-radius: 10px; font-weight:900; font-size:12px;
-  background: rgba(65,0,157,.10); color: var(--club); border:1px solid rgba(65,0,157,.25);
+  display:inline-flex; align-items:center; height:30px; padding:0 12px;
+  border-radius: 10px; font-weight:900; font-size:11px;
+  background: color-mix(in srgb, var(--club) 15%, transparent); color: var(--club);
+  border:1px solid color-mix(in srgb, var(--club) 28%, transparent);
 }
-.mc-pill{
-  display:inline-flex; align-items:center; height:36px; padding:0 14px;
-  border-radius:12px; background: var(--club); color: var(--white); font-weight:900;
-}
+.mc-card--dark .mc-status{ background: rgba(255,255,255,.1); color:#fff; border:1px solid rgba(255,255,255,.2); }
+
 .mc-live-btn{
   display:inline-flex; align-items:center; justify-content:center;
-  height:36px; padding:0 14px; border-radius:999px; font-weight:900; text-decoration:none;
-  background: var(--white); color: var(--black);
+  height:38px; padding:0 14px; border-radius:999px;
+  font-weight:900; font-size:14px; text-decoration:none;
+  background: var(--club); color: #fff;
+  transition: transform .06s ease, box-shadow .2s ease;
 }
-.mc-card--dark .mc-live-btn{ background: var(--club); color: var(--white); }
-
-.mc-card__foot{ margin-top:auto; padding: 0 18px 18px; }
+.mc-live-btn:hover{ transform: translateY(-1px); box-shadow: 0 10px 22px rgba(0,0,0,.18); }
 
 /* -------- Responsive -------- */
-@media (max-width: 980px){
+@media (max-width: 1080px){
   .mc-grid2{ grid-template-columns: 1fr; }
 }
-@media (max-width: 760px){
+@media (max-width: 980px){
   .mc-row{ grid-template-columns: 1fr; }
+}
+@media (max-width: 760px){
   .mc-row__content{ grid-template-columns: 1fr; text-align:center; }
   .mc-team, .mc-team--away{ justify-content:center; }
-  .mc-card__teams{ grid-template-columns: 1fr; text-align:center; }
 }
+@media (max-width: 720px){
+  .mc-card__teams{ grid-template-columns: 1fr; gap: 12px; }
+  .mc-card .mc-team__crest{ width:28px; height:28px; }
+  .mc-card .mc-team__name{ font-size:15px; }
+  .mc-card__score{ font-size:24px; }
+}
+
+/* Botón rojo solo cuando lo marcamos como --danger */
+.mc-live-btn--danger{
+  background: #e11d48;            /* rojo (rose-600) */
+  color: #fff;
+}
+.mc-live-btn--danger:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(225, 29, 72, .35);
+}
+
+/* ==== Compactar filas y pegar equipos al marcador (lista mensual) ==== */
+:root{
+  --score-col-width: 120px;   /* antes 180px aprox: más estrecho = más cerca */
+}
+
+.mc-row__content{
+  grid-template-columns: minmax(0,1fr) var(--score-col-width) minmax(0,1fr);
+  gap: 8px;                   /* menos separación entre columnas */
+}
+
+/* Para que el ESCUDO quede hacia el marcador en ambos lados */
+.mc-row__content .mc-team{ gap:8px; }
+
+/* Lado izquierdo: nombre hacia fuera, escudo hacia el centro */
+.mc-row__content .mc-team:not(.mc-team--away){
+  flex-direction: row-reverse;  /* [Nombre] [Escudo→centro] */
+  justify-self: end;
+  text-align: right;
+}
+
+/* Lado derecho: escudo hacia el centro, nombre hacia fuera (por defecto) */
+.mc-row__content .mc-team.mc-team--away{
+  justify-self: start;
+  text-align: left;
+}
+
+/* Opcional: un pelín más pequeño para acercar todo aún más */
+.mc-team__crest{ width:26px; height:26px; }
+.mc-center__score{ gap:6px; }
+
+/* ===== Ocultar nombres en filas (NO en las cards) cuando la pantalla es estrecha ===== */
+@media (max-width: 500px){
+  /* Solo dentro de la lista mensual */
+  .mc-row .mc-team__name{ display:none; }
+
+  /* Compactamos un poco el layout para que los escudos queden más cerca del marcador */
+  .mc-row__content{
+    grid-template-columns: minmax(0,1fr) 120px minmax(0,1fr);
+    gap: 8px;
+  }
+  .mc-row .mc-team__crest{ width:28px; height:28px; }   /* puedes subir a 30 si quieres más presencia */
+}
+
+/* Si quieres que se oculte aún antes, cambia 900px por 980/1024; si quieres que aguante más, baja a 820/760 */
