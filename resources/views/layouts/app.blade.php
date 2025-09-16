@@ -15,15 +15,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
   {{-- CSS planos desde public/css --}}
-  <link rel="stylesheet" href="{{ asset('/css/base.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/header.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/hero.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/squad.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/player-card.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/contenido.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/clasificacion.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/calendario.css') }}">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/hero.css">
+  <link rel="stylesheet" href="/css/squad.css">
+  <link rel="stylesheet" href="/css/player-card.css">
+  <link rel="stylesheet" href="/css/contenido.css">
+  <link rel="stylesheet" href="/css/clasificacion.css">
+  <link rel="stylesheet" href="/css/calendario.css">
 </head>
 <body>
   @include('partials.header')
@@ -35,6 +35,6 @@
   @include('partials.footer')
 
   {{-- JS plano desde public/js --}}
-  <script src="{{ asset('/js/carrusel.js') }}" defer></script>
+  <script type="module" src="/js/app.js"></script>
 </body>
 </html>
