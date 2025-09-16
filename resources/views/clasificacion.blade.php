@@ -60,7 +60,7 @@
             <tr class="is-our-team">
               <td>11</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+                <img class="team-logo" src="{{ asset('images/escudos/logo.png') }}" alt="Occult">
                 <span>Occult FC</span>
               </td>
               <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
@@ -69,7 +69,7 @@
             <tr>
               <td>12</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/solteria.png') }}" alt="Soltería">
+                <img class="team-logo" src="{{ asset('images/escudos/solteria.png') }}" alt="Soltería">
                 <span>Soltería FC</span>
               </td>
               <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
@@ -78,7 +78,7 @@
             <tr>
               <td>13</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ Vite::asset('resources/images/escudos/titanes.png') }}" alt="titanes">
+                <img class="team-logo" src="{{ asset('images/escudos/titanes.png') }}" alt="Titanes">
                 <span>Titanes del Sur</span>
               </td>
               <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>

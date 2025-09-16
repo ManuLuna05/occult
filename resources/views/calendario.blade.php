@@ -34,7 +34,7 @@
 
         <div class="mc-row__content">
           <div class="mc-team">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
             <span class="mc-team__name">Occult FC</span>
           </div>
 
@@ -46,7 +46,7 @@
           </div>
 
           <div class="mc-team mc-team--away">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/futbolbarro.png') }}" alt="Fútbol Barro">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/futbolbarro.png') }}" alt="Fútbol Barro">
             <span class="mc-team__name">Fútbol y Barro</span>
           </div>
         </div>
@@ -60,7 +60,7 @@
 
         <div class="mc-row__content">
           <div class="mc-team">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
             <span class="mc-team__name">Occult FC</span>
           </div>
 
@@ -72,7 +72,7 @@
           </div>
 
           <div class="mc-team mc-team--away">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/nuevaunion.png') }}" alt="Nueva Unión">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/nuevaunion.png') }}" alt="Nueva Unión">
             <span class="mc-team__name">Nueva Unión</span>
           </div>
         </div>
@@ -91,7 +91,7 @@
 
         <div class="mc-row__content">
           <div class="mc-team">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/mexicano.png') }}" alt="Mexicano">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/mexicano.png') }}" alt="Mexicano">
             <span class="mc-team__name">Mexicano</span>
           </div>
 
@@ -104,7 +104,7 @@
 
           <div class="mc-team mc-team--away">
             
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
             <span class="mc-team__name">Occult FC</span>
           </div>
         </div>
@@ -118,7 +118,7 @@
 
         <div class="mc-row__content">
           <div class="mc-team">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/nuevaunion.png') }}" alt="Nueva Unión">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/nuevaunion.png') }}" alt="Nueva Unión">
             <span class="mc-team__name">Nueva Unión</span>
           </div>
 
@@ -128,7 +128,7 @@
         </div>
 
           <div class="mc-team mc-team--away">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
             <span class="mc-team__name">Occult FC</span>
           </div>
         </div>
@@ -142,7 +142,7 @@
 
         <div class="mc-row__content">
           <div class="mc-team">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
             <span class="mc-team__name">Occult FC</span>
           </div>
 
@@ -152,7 +152,7 @@
         </div>
 
           <div class="mc-team mc-team--away">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/solteria.png') }}" alt="Soltería">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/solteria.png') }}" alt="Soltería">
             <span class="mc-team__name">Soltería FC</span>
           </div>
         </div>
@@ -175,7 +175,7 @@
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/mexicano.png') }}" alt="Mexicano">
+                <img class="mc-team__crest" src="{{ asset('images/escudos/mexicano.png') }}" alt="Mexicano">
                 <span class="mc-team__name">Mexicano</span>
               </div>
 
@@ -185,7 +185,7 @@
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
                 <span class="mc-team__name">Occult FC</span>
               </div>
             </div>
@@ -214,7 +214,7 @@
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/nuevaunion.png') }}" alt="Nueva Unión">
+                <img class="mc-team__crest" src="{{ asset('images/escudos/nuevaunion.png') }}" alt="Nueva Unión">
                 <span class="mc-team__name">Nueva Unión</span>
               </div>
 
@@ -224,7 +224,7 @@
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
                 <span class="mc-team__name">Occult FC</span>
               </div>
             </div>
@@ -250,7 +250,7 @@
 
         <div class="mc-row__content">
           <div class="mc-team">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/mexicano.png') }}" alt="Mexicano">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/mexicano.png') }}" alt="Mexicano">
             <span class="mc-team__name">Mexicano</span>
           </div>
 
@@ -263,7 +263,7 @@
 
           <div class="mc-team mc-team--away">
             
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
             <span class="mc-team__name">Occult FC</span>
           </div>
         </div>
@@ -276,7 +276,7 @@
 
         <div class="mc-row__content">
           <div class="mc-team">
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/coto.png') }}" alt="Coto">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/coto.png') }}" alt="Coto">
             <span class="mc-team__name">Coto M.M</span>
           </div>
 
@@ -289,7 +289,7 @@
 
           <div class="mc-team mc-team--away">
             
-            <img class="mc-team__crest" src="{{ Vite::asset('resources/images/escudos/logo.png') }}" alt="Occult FC">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
             <span class="mc-team__name">Occult FC</span>
           </div>
         </div>

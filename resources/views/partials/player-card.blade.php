@@ -5,7 +5,7 @@
 
   <div class="pc-photo-wrap">
     <img class="pc-photo"
-         src="{{ Vite::asset('resources/images/players/'.$player['photo']) }}"
+         src="{{ asset('images/players/' . $player['photo']) }}"
          alt="{{ $player['name'] }}">
   </div>
 

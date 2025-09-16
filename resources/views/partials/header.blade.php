@@ -2,7 +2,7 @@
   <div class="topbar">
     {{-- IZQUIERDA: logo --}}
     <a class="brand" href="{{ route('home') }}">
-      <img src="{{ Vite::asset('resources/images/logo2.png') }}" alt="Logo del club" class="logo" />
+      <img src="{{ asset('images/logo2.png') }}" alt="Soltería" class="logo" />
       <span class="club-name">Occult FC</span>
     </a>
 

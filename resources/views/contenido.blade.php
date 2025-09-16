@@ -11,7 +11,7 @@
       <div class="articles-grid">
         <!-- Artículo 1 -->
         <a href="#articulo1" class="article-card">
-          <img src="{{ Vite::asset('resources/images/articulos/articulo1.jpg') }}" alt="Noticia 1" loading="lazy">
+          <img src="{{ asset('images/articulos/articulo1.jpg') }}" alt="Noticia 1" loading="lazy">
           <div class="article-body">
             <h3 class="article-title">Derrota frente a Mexicano</h3>
             <p class="article-excerpt">Declaraciones sobre el partido y el resultado</p>
@@ -20,7 +20,7 @@
 
         <!-- Artículo 2 -->
         <a href="#articulo2" class="article-card">
-          <img src="{{ Vite::asset('resources/images/articulos/nuevaequipacion.jpg') }}" alt="Noticia 2" loading="lazy">
+          <img src="{{ asset('images/articulos/nuevaequipacion.jpg') }}" alt="Noticia 2" loading="lazy">
           <div class="article-body">
             <h3 class="article-title">Nueva equipación oficial 2025</h3>
             <p class="article-excerpt">Esta es la segunda equipación del Occult para la nueva temporada</p>
@@ -29,7 +29,7 @@
 
         <!-- Artículo 3 -->
         <a href="#articulo3" class="article-card">
-          <img src="{{ Vite::asset('resources/images/articulos/articulo3.png') }}" alt="Noticia 3" loading="lazy">
+          <img src="{{ asset('images/articulos/articulo3.png') }}" alt="Noticia 3" loading="lazy">
           <div class="article-body">
             <h3 class="article-title">Balance de la pretemporada</h3>
             <p class="article-excerpt">Balance sobre los resultados de los amistosos de pretemporada</p>
@@ -42,7 +42,7 @@
     <div id="articulo1" class="article-modal">
       <a href="#" class="modal-close">×</a>
       <div class="modal-content">
-        <img src="{{ Vite::asset('resources/images/articulos/articulo1.jpg') }}" alt="Occult FC vs Mexicano - Amistoso de pretemporada">
+        <img src="{{ asset('images/articulos/articulo1.jpg') }}" alt="Occult FC vs Mexicano - Amistoso de pretemporada">
         <h2>Occult FC cierra la pretemporada con derrota 5-3 ante Mexicano</h2>
         <p>
           El <strong>Occult FC</strong> cayó por <strong>5-3</strong> frente a <strong>Mexicano</strong> en el que fue el último amistoso
@@ -52,15 +52,15 @@
         </p>
         <p>
           Tras el choque, el técnico del Occult analizó el rendimiento del equipo:  
-          <em>“Más allá del resultado, este último amistoso nos ha servido para comprobar dónde debemos
+          <em>"Más allá del resultado, este último amistoso nos ha servido para comprobar dónde debemos
           mejorar. Hemos generado ocasiones y marcado tres goles, pero no podemos permitirnos encajar
-          cinco. Ahora toca ajustar la defensa y llegar listos al inicio de la liga”</em>.
+          cinco. Ahora toca ajustar la defensa y llegar listos al inicio de la liga"</em>.
         </p>
         <p>
           El capitán también hizo balance de la preparación:  
-          <em>“No nos gusta perder, pero estos partidos son parte del proceso. Cerramos la pretemporada con
+          <em>"No nos gusta perder, pero estos partidos son parte del proceso. Cerramos la pretemporada con
           mucho trabajo por delante, aunque con la confianza de que el grupo está unido y motivado para
-          afrontar el arranque oficial”</em>.
+          afrontar el arranque oficial"</em>.
         </p>
         <p>
           Con este resultado, el Occult pone punto final a los amistosos de preparación y centra ya todas
@@ -73,7 +73,7 @@
     <div id="articulo2" class="article-modal">
       <a href="#" class="modal-close">×</a>
       <div class="modal-content">
-        <img src="{{ Vite::asset('resources/images/articulos/nuevaequipacion.jpg') }}" alt="Nueva equipación blanca y dorada">
+        <img src="{{ asset('images/articulos/nuevaequipacion.jpg') }}" alt="Nueva equipación blanca y dorada">
         <h2>Nueva equipación oficial 2025</h2>
         <p>
           El <strong>Occult FC</strong> presenta su nueva piel para la temporada 2025: una camiseta que
@@ -100,7 +100,7 @@
     <div id="articulo3" class="article-modal">
       <a href="#" class="modal-close">×</a>
       <div class="modal-content">
-        <img src="{{ Vite::asset('resources/images/articulos/articulo3.png') }}" alt="Balance de la pretemporada Occult FC">
+        <img src="{{ asset('images/articulos/articulo3.png') }}" alt="Balance de la pretemporada Occult FC">
         <h2>Balance de la pretemporada: un empate y dos derrotas</h2>
         <p>
           El <strong>Occult FC</strong> cerró su fase de preparación con un balance de <strong>un empate</strong> y
@@ -109,14 +109,14 @@
         </p>
         <p>
           El entrenador del Occult hizo balance tras el último amistoso:  
-          <em>“No podemos quedarnos solo con los números. Estos partidos nos han permitido probar sistemas,
+          <em>"No podemos quedarnos solo con los números. Estos partidos nos han permitido probar sistemas,
           dar minutos a todos y detectar qué aspectos debemos mejorar. El equipo ha mostrado carácter en
-          ataque, pero debemos reforzar nuestra solidez defensiva”</em>.
+          ataque, pero debemos reforzar nuestra solidez defensiva"</em>.
         </p>
         <p>
           Desde la plantilla también se respira confianza. El capitán declaró:  
-          <em>“Los resultados no fueron los esperados, pero lo importante era rodarnos y crecer como grupo.
-          Ahora toca mirar hacia adelante: la liga empieza y queremos llegar con toda la energía”</em>.
+          <em>"Los resultados no fueron los esperados, pero lo importante era rodarnos y crecer como grupo.
+          Ahora toca mirar hacia adelante: la liga empieza y queremos llegar con toda la energía"</em>.
         </p>
         <p>
           Con la pretemporada concluida, el Occult FC afronta ya la cuenta atrás para el inicio de la
@@ -134,8 +134,8 @@
       <div class="videos-grid">
         <article class="video-card">
           <div class="ratio ratio-16x9">
-            <video controls preload="metadata" poster="{{ Vite::asset('resources/images/manumuro.jpg') }}">
-              <source src="{{ Vite::asset('resources/videos/paradasmanu.mp4') }}" type="video/mp4">
+            <video controls preload="metadata" poster="{{ asset('images/manumuro.jpg') }}">
+              <source src="{{ asset('videos/paradasmanu.mp4') }}" type="video/mp4">
               Tu navegador no soporta la etiqueta de vídeo.
             </video>
           </div>
@@ -144,8 +144,8 @@
 
         <article class="video-card">
           <div class="ratio ratio-16x9">
-            <video controls preload="metadata" poster="{{ Vite::asset('resources/images/amistoso1.jpg') }}">
-              <source src="{{ Vite::asset('resources/videos/golmarcos.mp4') }}" type="video/mp4">
+            <video controls preload="metadata" poster="{{ asset('images/amistoso1.jpg') }}">
+              <source src="{{ asset('videos/golmarcos.mp4') }}" type="video/mp4">
               Tu navegador no soporta la etiqueta de vídeo.
             </video>
           </div>
@@ -154,8 +154,8 @@
 
         <article class="video-card">
           <div class="ratio ratio-16x9">
-            <video controls preload="metadata" poster="{{ Vite::asset('resources/images/amistoso1.jpg') }}">
-              <source src="{{ Vite::asset('resources/videos/golantonio.mp4') }}" type="video/mp4">
+            <video controls preload="metadata" poster="{{ asset('images/amistoso1.jpg') }}">
+              <source src="{{ asset('videos/golantonio.mp4') }}" type="video/mp4">
               Tu navegador no soporta la etiqueta de vídeo.
             </video>
           </div>
@@ -171,49 +171,49 @@
       <div class="photo-grid">
         {{-- Cada foto abre un lightbox CSS (:target) --}}
         <a href="#foto1" class="photo">
-          <img src="{{ Vite::asset('resources/images/camiseta2.jpg') }}" alt="Celebración gol" loading="lazy">
+          <img src="{{ asset('images/camiseta2.jpg') }}" alt="Celebración gol" loading="lazy">
         </a>
         <a href="#foto2" class="photo">
-          <img src="{{ Vite::asset('resources/images/camiseta1.jpg') }}" alt="Calentamiento" loading="lazy">
+          <img src="{{ asset('images/camiseta1.jpg') }}" alt="Calentamiento" loading="lazy">
         </a>
         <a href="#foto3" class="photo">
-          <img src="{{ Vite::asset('resources/images/dorsales2.jpg') }}" alt="Afición" loading="lazy">
+          <img src="{{ asset('images/dorsales2.jpg') }}" alt="Afición" loading="lazy">
         </a>
         <a href="#foto4" class="photo">
-          <img src="{{ Vite::asset('resources/images/f1.jpg') }}" alt="Entrada al área" loading="lazy">
+          <img src="{{ asset('images/f1.jpg') }}" alt="Entrada al área" loading="lazy">
         </a>
         <a href="#foto5" class="photo">
-          <img src="{{ Vite::asset('resources/images/f2.jpg') }}" alt="Parada del portero" loading="lazy">
+          <img src="{{ asset('images/f2.jpg') }}" alt="Parada del portero" loading="lazy">
         </a>
         <a href="#foto6" class="photo">
-          <img src="{{ Vite::asset('resources/images/f3.jpg') }}" alt="Once inicial" loading="lazy">
+          <img src="{{ asset('images/f3.jpg') }}" alt="Once inicial" loading="lazy">
         </a>
       </div>
 
       {{-- Lightboxs (uno por foto). Cerrar clicando fuera o en × --}}
       <div id="foto1" class="lightbox">
         <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
-        <img src="{{ Vite::asset('resources/images/camiseta2.jpg') }}" alt="">
+        <img src="{{ asset('images/camiseta2.jpg') }}" alt="">
       </div>
       <div id="foto2" class="lightbox">
         <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
-        <img src="{{ Vite::asset('resources/images/camiseta1.jpg') }}" alt="">
+        <img src="{{ asset('images/camiseta1.jpg') }}" alt="">
       </div>
       <div id="foto3" class="lightbox">
         <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
-        <img src="{{ Vite::asset('resources/images/dorsales2.jpg') }}" alt="">
+        <img src="{{ asset('images/dorsales2.jpg') }}" alt="">
       </div>
       <div id="foto4" class="lightbox">
         <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
-        <img src="{{ Vite::asset('resources/images/f1.jpg') }}" alt="">
+        <img src="{{ asset('images/f1.jpg') }}" alt="">
       </div>
       <div id="foto5" class="lightbox">
         <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
-        <img src="{{ Vite::asset('resources/images/f2.jpg') }}" alt="">
+        <img src="{{ asset('images/f2.jpg') }}" alt="">
       </div>
       <div id="foto6" class="lightbox">
         <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
-        <img src="{{ Vite::asset('resources/images/f3.jpg') }}" alt="">
+        <img src="{{ asset('images/f3.jpg') }}" alt="">
       </div>
     </section>
 
