@@ -202,7 +202,7 @@
             <h3>Siguiente</h3>
             <div class="mc-card__tags">
               {{-- quitadas las clases --invert; el dark theme las estiliza solo --}}
-              <span class="mc-chip">LALIGA HYPERMOTION</span>
+              <span class="mc-chip">SEVEN LEAGUE</span>
               <span class="mc-bullet">J1</span>
             </div>
           </div>
