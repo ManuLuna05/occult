@@ -124,7 +124,7 @@
 
         <div class="mc-center">
           <span class="mc-center__date">dom, 21 ago</span>
-          <div class="mc-center__score">20:00</div>
+          <div class="mc-center__score">19:00</div>
         </div>
 
           <div class="mc-team mc-team--away">
@@ -220,7 +220,7 @@
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">dom, 21 sept · 20:00 · Estadio: Por determinar</span>
+                <span class="mc-card__date">dom, 21 sept · 19:00 · Estadio: UD Sur</span>
               </div>
 
               <div class="mc-team mc-team--away">
