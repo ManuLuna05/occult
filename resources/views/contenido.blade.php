@@ -148,7 +148,7 @@
         <article class="video-card">
           <div class="ratio ratio-16x9">
             <video controls preload="metadata" poster="{{ asset('images/hugogoals.png') }}">
-              <source src="{{ asset('videos/goleshugo.mp4') }}" type="video/mp4">
+              <source src="{{ asset('videos/goleshugo2.mp4') }}" type="video/mp4">
               Tu navegador no soporta la etiqueta de vídeo.
             </video>
           </div>
