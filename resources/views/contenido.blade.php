@@ -11,10 +11,10 @@
       <div class="articles-grid">
         <!-- Artículo 1 -->
         <a href="#articulo1" class="article-card">
-          <img src="{{ asset('images/articulos/articulo1.jpg') }}" alt="Noticia 1" loading="lazy">
+          <img src="{{ asset('images/articulos/articulo4.jpg') }}" alt="Noticia 1" loading="lazy">
           <div class="article-body">
-            <h3 class="article-title">Derrota frente a Mexicano</h3>
-            <p class="article-excerpt">Declaraciones sobre el partido y el resultado</p>
+            <h3 class="article-title">Inicio con buen pie</h3>
+            <p class="article-excerpt">Victoria del Occult en su inicio liguero</p>
           </div>
         </a>
 
@@ -42,32 +42,35 @@
     <div id="articulo1" class="article-modal">
       <a href="#" class="modal-close">×</a>
       <div class="modal-content">
-        <img src="{{ asset('images/articulos/articulo1.jpg') }}" alt="Occult FC vs Mexicano - Amistoso de pretemporada">
-        <h2>Occult FC cierra la pretemporada con derrota 5-3 ante Mexicano</h2>
+        <img src="{{ asset('images/articulos/articulo4.jpg') }}" alt="Occult FC vs Nueva Unión - Primera victoria en liga">
+        <h2>Occult FC logra su primera victoria en liga con un 3-1 ante Nueva Unión</h2>
         <p>
-          El <strong>Occult FC</strong> cayó por <strong>5-3</strong> frente a <strong>Mexicano</strong> en el que fue el último amistoso
-          de la pretemporada, disputado en el estadio de Vistalegre. El encuentro estuvo marcado por la
-          intensidad ofensiva y la falta de solidez atrás, factores que acabaron inclinando el marcador a
-          favor del rival.
+          El <strong>Occult FC</strong> consiguió su <strong>primera victoria en liga</strong> tras imponerse por 
+          <strong>3-1</strong> frente a <strong>Nueva Unión</strong>, en un encuentro lleno de intensidad y buen
+          fútbol que hizo vibrar a la afición.
         </p>
         <p>
-          Tras el choque, el técnico del Occult analizó el rendimiento del equipo:  
-          <em>"Más allá del resultado, este último amistoso nos ha servido para comprobar dónde debemos
-          mejorar. Hemos generado ocasiones y marcado tres goles, pero no podemos permitirnos encajar
-          cinco. Ahora toca ajustar la defensa y llegar listos al inicio de la liga"</em>.
+          El equipo se adelantó en el marcador con un tanto tempranero que dio confianza y permitió manejar 
+          los tiempos del partido. Con un juego rápido y efectivo en ataque, llegaron el <strong>segundo</strong> 
+          y <strong>tercer gol</strong>, que prácticamente encarrilaron el triunfo.
         </p>
         <p>
-          El capitán también hizo balance de la preparación:  
-          <em>"No nos gusta perder, pero estos partidos son parte del proceso. Cerramos la pretemporada con
-          mucho trabajo por delante, aunque con la confianza de que el grupo está unido y motivado para
-          afrontar el arranque oficial"</em>.
+          Nueva Unión logró descontar en los minutos finales con un gol que puso el <strong>3-1 definitivo</strong>, 
+          pero la victoria ya estaba asegurada. El choque dejó claro que el grupo está unido y cada vez más 
+          sólido en todas sus líneas.
         </p>
         <p>
-          Con este resultado, el Occult pone punto final a los amistosos de preparación y centra ya todas
-          sus energías en el debut liguero de la temporada 2025.
+          Tras el partido, el técnico del Occult valoró el esfuerzo del equipo:  
+          <em>"Era fundamental sumar la primera victoria para reforzar la moral. Los chicos han trabajado duro 
+          y se lo merecen. Ahora toca seguir creciendo partido a partido"</em>.
+        </p>
+        <p>
+          Con este resultado, el Occult FC suma sus tres primeros puntos de la temporada y afronta los próximos 
+          compromisos con ilusión renovada y la confianza de haber estrenado el casillero de victorias.
         </p>
       </div>
     </div>
+
 
 
     <div id="articulo2" class="article-modal">
@@ -144,12 +147,12 @@
 
         <article class="video-card">
           <div class="ratio ratio-16x9">
-            <video controls preload="metadata" poster="{{ asset('images/amistoso1.jpg') }}">
-              <source src="{{ asset('videos/golmarcos.mp4') }}" type="video/mp4">
+            <video controls preload="metadata" poster="{{ asset('images/hugogoals.png') }}">
+              <source src="{{ asset('videos/goleshugo.mp4') }}" type="video/mp4">
               Tu navegador no soporta la etiqueta de vídeo.
             </video>
           </div>
-          <h3 class="video-title">2-1 Occult vs Mexicano</h3>
+          <h3 class="video-title">Goles Hugo vs Nueva Unión</h3>
         </article>
 
         <article class="video-card">
@@ -188,6 +191,12 @@
         <a href="#foto6" class="photo">
           <img src="{{ asset('images/f3.jpg') }}" alt="Once inicial" loading="lazy">
         </a>
+        <a href="#foto7" class="photo">
+          <img src="{{ asset('images/f4.jpg') }}" alt="Once inicial" loading="lazy">
+        </a>
+        <a href="#foto8" class="photo">
+          <img src="{{ asset('images/f5.jpg') }}" alt="Once inicial" loading="lazy">
+        </a>
       </div>
 
       {{-- Lightboxs (uno por foto). Cerrar clicando fuera o en × --}}
@@ -214,6 +223,14 @@
       <div id="foto6" class="lightbox">
         <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
         <img src="{{ asset('images/f3.jpg') }}" alt="">
+      </div>
+      <div id="foto7" class="lightbox">
+        <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
+        <img src="{{ asset('images/f4.jpg') }}" alt="">
+      </div>
+      <div id="foto8" class="lightbox">
+        <a href="#" class="lightbox__close" aria-label="Cerrar">×</a>
+        <img src="{{ asset('images/f5.jpg') }}" alt="">
       </div>
     </section>
 

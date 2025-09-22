@@ -24,11 +24,11 @@
     </figure>
 
     <figure class="hero-slide">
-      <a href="http://127.0.0.1:8000/">
-        <img src="{{ asset('images/dorsales.jpg') }}" alt="Dorsales">
+      <a href="/contenido">
+        <img src="{{ asset('images/hugogoals.png') }}" alt="Dorsales">
         <figcaption class="hero-caption">
-          <span class="kicker">DORSALES</span>
-          <h2>Estos son los dorsales que vestiran los nuestros en la temporada 25/26</h2>
+          <span class="kicker">RESUMENES</span>
+          <h2>Los goles de Hugo en la primera victoria liguera</h2>
         </figcaption>
       </a>
     </figure>
