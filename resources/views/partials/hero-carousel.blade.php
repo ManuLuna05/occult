@@ -25,10 +25,10 @@
 
     <figure class="hero-slide">
       <a href="/contenido">
-        <img src="{{ asset('images/hugogoals.png') }}" alt="Dorsales">
+        <img src="{{ asset('images/unai.png') }}" alt="Dorsales">
         <figcaption class="hero-caption">
           <span class="kicker">RESUMENES</span>
-          <h2>Los goles de Hugo en la primera victoria liguera</h2>
+          <h2>El increible gol de Unai ante Soltería FC</h2>
         </figcaption>
       </a>
     </figure>

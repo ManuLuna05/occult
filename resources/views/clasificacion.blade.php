@@ -58,30 +58,30 @@
           </thead>
           <tbody>
             <tr class="is-our-team">
-              <td>6</td>
+              <td>3</td>
               <td class="team-cell">
                 <img class="team-logo" src="{{ asset('images/escudos/logo.png') }}" alt="Occult">
                 <span>Occult FC</span>
               </td>
-              <td>3</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>1</td><td>2</td>
+              <td>6</td><td>2</td><td>2</td><td>0</td><td>0</td><td>9</td><td>5</td><td>4</td>
             </tr>
 
             <tr>
-              <td>7</td>
+              <td>4</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ asset('images/escudos/coto.png') }}" alt="coto">
-                <span>Coto M.M</span>
+                <img class="team-logo" src="{{ asset('images/escudos/nuevaunion.png') }}" alt="nueva union">
+                <span>Unión Cordobesa</span>
               </td>
-              <td>3</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>2</td><td>1</td>
+              <td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>13</td><td>3</td><td>10</td>
             </tr>
 
             <tr>
-              <td>8</td>
+              <td>5</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ asset('images/escudos/james.png') }}" alt="james">
-                <span>James Webb Ham</span>
+                <img class="team-logo" src="{{ asset('images/escudos/arcangel.png') }}" alt="james">
+                <span>Arcángel CF</span>
               </td>
-              <td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>2</td><td>3</td><td>-1</td>
+              <td>3</td><td>2</td><td>1</td><td>0</td><td>1</td><td>12</td><td>10</td><td>2</td>
             </tr>
           </tbody>
         </table>

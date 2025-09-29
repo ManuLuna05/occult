@@ -150,7 +150,9 @@
 
         <div class="mc-center">
           <span class="mc-center__date">vie, 26 sept</span>
-          <div class="mc-center__score">20:30</div>
+          <div class="mc-center__score">
+            <strong>6</strong><i>-</i><strong>4</strong>
+          </div>
         </div>
 
           <div class="mc-team mc-team--away">
@@ -167,7 +169,7 @@
             <h3>Anterior</h3>
             <div class="mc-card__tags">
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J1</span>
+              <span class="mc-bullet">J2</span>
             </div>
           </div>
 
@@ -178,18 +180,18 @@
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/nuevaunion.png') }}" alt="Mexicano">
-                <span class="mc-team__name">Nueva Unión</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Mexicano">
+                <span class="mc-team__name">Occult FC</span>
               </div>
 
               <div class="mc-card__center">
-                <div class="mc-card__score">1 <i>-</i> 3</div>
-                <span class="mc-card__date">dom, 21 sept · 19:00 · UD Sur</span>
+                <div class="mc-card__score">6 <i>-</i> 4</div>
+                <span class="mc-card__date">vie, 26 sept · 20:30 · El Carmen</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
-                <span class="mc-team__name">Occult FC</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/solteria.png') }}" alt="Occult FC">
+                <span class="mc-team__name">Soltería FC</span>
               </div>
             </div>
           </div>
@@ -206,29 +208,29 @@
             <div class="mc-card__tags">
               {{-- quitadas las clases --invert; el dark theme las estiliza solo --}}
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J2</span>
+              <span class="mc-bullet">J3</span>
             </div>
           </div>
 
           <div class="mc-card__body">
             <div class="mc-meta-line mc-meta-line--invert">
-              <span class="mc-status">En juego el viernes</span>
+              <span class="mc-status">En juego el domingo</span>
             </div>
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
-                <span class="mc-team__name">Occult FC</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/mexicano.png') }}" alt="Mexicano FC">
+                <span class="mc-team__name">Mexicano</span>
               </div>
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">vie, 26 sept · 20:30 · Estadio: El Carmen</span>
+                <span class="mc-card__date">dom, 5 oct · 17:00 · Estadio: Vistalegre</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/solteria.png') }}" alt="Soltería FC">
-                <span class="mc-team__name">Soltería FC</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+                <span class="mc-team__name">Occult FC</span>
               </div>
             </div>
           </div>
@@ -258,9 +260,9 @@
           </div>
 
           <div class="mc-center">
-            <span class="mc-center__date">Por determinar</span>
+            <span class="mc-center__date">dom, 5 oct</span>
             <div class="mc-center__score">
-              <strong>— <i>-</i> —</strong>
+              <strong>17:00</strong>
             </div>
           </div>
 

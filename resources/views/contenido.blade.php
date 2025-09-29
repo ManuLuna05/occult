@@ -29,10 +29,10 @@
 
         <!-- Artículo 3 -->
         <a href="#articulo3" class="article-card">
-          <img src="{{ asset('images/articulos/articulo3.png') }}" alt="Noticia 3" loading="lazy">
+          <img src="{{ asset('images/articulos/articulo1.jpg') }}" alt="Noticia 3" loading="lazy">
           <div class="article-body">
-            <h3 class="article-title">Balance de la pretemporada</h3>
-            <p class="article-excerpt">Balance sobre los resultados de los amistosos de pretemporada</p>
+            <h3 class="article-title">Victoria ante Soltería FC</h3>
+            <p class="article-excerpt">Victoria ante uno de los equipos más fuertes de la categoría</p>
           </div>
         </a>
       </div>
@@ -103,31 +103,30 @@
     <div id="articulo3" class="article-modal">
       <a href="#" class="modal-close">×</a>
       <div class="modal-content">
-        <img src="{{ asset('images/articulos/articulo3.png') }}" alt="Balance de la pretemporada Occult FC">
-        <h2>Balance de la pretemporada: un empate y dos derrotas</h2>
+        <img src="{{ asset('images/articulos/articulo1.jpg') }}" alt="Victoria ante Soltería FC">
+        <h2>Occult sigue intratable: segunda victoria en liga</h2>
         <p>
-          El <strong>Occult FC</strong> cerró su fase de preparación con un balance de <strong>un empate</strong> y
-          <strong>dos derrotas</strong>. Aunque los resultados no acompañaron, el cuerpo técnico y la plantilla
-          destacan el valor de estos encuentros de cara a la puesta a punto para la temporada 2025.
+          El <strong>Occult FC</strong> prolongó su gran inicio de temporada con una nueva victoria en la segunda jornada
+          de liga, imponiéndose por <strong>6-4</strong> a <strong>Soltería FC</strong> en un duelo cargado de emoción y goles.
+          Con este triunfo, el equipo suma su <strong>segunda victoria consecutiva</strong> y confirma su buen momento.
         </p>
         <p>
-          El entrenador del Occult hizo balance tras el último amistoso:  
-          <em>"No podemos quedarnos solo con los números. Estos partidos nos han permitido probar sistemas,
-          dar minutos a todos y detectar qué aspectos debemos mejorar. El equipo ha mostrado carácter en
-          ataque, pero debemos reforzar nuestra solidez defensiva"</em>.
+          Uno de los momentos más celebrados llegó con el <strong>golazo de Unai</strong>, un disparo espectacular desde fuera
+          del área que se coló directo en la escuadra, desatando la ovación de la grada y marcando el ritmo del partido.
         </p>
         <p>
-          Desde la plantilla también se respira confianza. El capitán declaró:  
-          <em>"Los resultados no fueron los esperados, pero lo importante era rodarnos y crecer como grupo.
-          Ahora toca mirar hacia adelante: la liga empieza y queremos llegar con toda la energía"</em>.
+          En defensa, <strong>Bonilla</strong> volvió a brillar con una actuación impecable. Su capacidad de anticipación,
+          liderazgo en la zaga y firmeza en los duelos fueron determinantes para contener las acometidas de Soltería FC,
+          aportando seguridad al equipo en los momentos más críticos.
         </p>
         <p>
-          Con la pretemporada concluida, el Occult FC afronta ya la cuenta atrás para el inicio de la
-          competición oficial, con la convicción de que el trabajo realizado servirá de base para
-          encarar una exigente campaña.
+          Con dos victorias en dos partidos, el Occult FC se coloca en la parte alta de la clasificación y mantiene intactas
+          sus aspiraciones. La plantilla respira confianza y la afición sueña con que esta racha sea solo el comienzo de una
+          temporada memorable.
         </p>
       </div>
     </div>
+
 
 
     {{-- ================== VÍDEOS ================== --}}
@@ -157,12 +156,12 @@
 
         <article class="video-card">
           <div class="ratio ratio-16x9">
-            <video controls preload="metadata" poster="{{ asset('images/amistoso1.jpg') }}">
-              <source src="{{ asset('videos/golantonio.mp4') }}" type="video/mp4">
+            <video controls preload="metadata" poster="{{ asset('images/unai.png') }}">
+              <source src="{{ asset('videos/unaigol.mp4') }}" type="video/mp4">
               Tu navegador no soporta la etiqueta de vídeo.
             </video>
           </div>
-          <h3 class="video-title">1-0 Occult vs Mexicano</h3>
+          <h3 class="video-title">Golazo de Unai ante Soltería</h3>
         </article>
       </div>
     </section>
