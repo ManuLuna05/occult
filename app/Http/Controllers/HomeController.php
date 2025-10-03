@@ -118,10 +118,10 @@ class HomeController extends Controller
                 'matches' => 2,
             ],
             [
-                'number'  => 6,
+                'number'  => 17,
                 'name'    => 'David',
                 'role'    => 'Mediocentro',
-                'photo'   => 'player.jpg',
+                'photo'   => 'david.png',
                 'minutes' => 0,
                 'goals'   => 0,
                 'matches' => 0,
