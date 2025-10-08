@@ -186,7 +186,7 @@
 
               <div class="mc-card__center">
                 <div class="mc-card__score">3 <i>-</i> 4</div>
-                <span class="mc-card__date">dom, 05 oct · 17:00 · Vistalegre</span>
+                <span class="mc-card__date">dom, 05 oct · 17:00 · Estadio: Vistalegre</span>
               </div>
 
               <div class="mc-team mc-team--away">
@@ -214,7 +214,7 @@
 
           <div class="mc-card__body">
             <div class="mc-meta-line mc-meta-line--invert">
-              <span class="mc-status">Por determinar</span>
+              <span class="mc-status">En juego el viernes</span>
             </div>
 
             <div class="mc-card__teams">
@@ -225,7 +225,7 @@
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">Por determinar</span>
+                <span class="mc-card__date">vie, 10 oct · 22:30 · Estadio: El Carmen</span>
               </div>
 
               <div class="mc-team mc-team--away">
@@ -286,9 +286,9 @@
           </div>
 
           <div class="mc-center">
-            <span class="mc-center__date">Por determinar</span>
+            <span class="mc-center__date">vie, 10 oct</span>
             <div class="mc-center__score">
-              <strong>— <i>-</i> —</strong>
+              <strong>22:30</strong>
             </div>
           </div>
 
