@@ -58,30 +58,30 @@
           </thead>
           <tbody>
             <tr class="is-our-team">
-              <td>3</td>
+              <td>1</td>
               <td class="team-cell">
                 <img class="team-logo" src="{{ asset('images/escudos/logo.png') }}" alt="Occult">
                 <span>Occult FC</span>
               </td>
-              <td>9</td><td>3</td><td>3</td><td>0</td><td>0</td><td>13</td><td>8</td><td>5</td>
+              <td>15</td><td>5</td><td>5</td><td>0</td><td>0</td><td>38</td><td>10</td><td>28</td>
             </tr>
 
             <tr>
-              <td>4</td>
+              <td>2</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ asset('images/escudos/avanti.png') }}" alt="avanti">
-                <span>New Avanti FC</span>
+                <img class="team-logo" src="{{ asset('images/escudos/city.png') }}" alt="avanti">
+                <span>CityLogin</span>
               </td>
-              <td>9</td><td>4</td><td>3</td><td>0</td><td>1</td><td>20</td><td>16</td><td>4</td>
+              <td>15</td><td>5</td><td>5</td><td>0</td><td>0</td><td>37</td><td>9</td><td>28</td>
             </tr>
 
             <tr>
-              <td>5</td>
+              <td>3</td>
               <td class="team-cell">
-                <img class="team-logo" src="{{ asset('images/escudos/gorineta.png') }}" alt="gorineta">
-                <span>Gorineta</span>
+                <img class="team-logo" src="{{ asset('images/escudos/cachorros.png') }}" alt="gorineta">
+                <span>Cachorros</span>
               </td>
-              <td>6</td><td>3</td><td>2</td><td>0</td><td>1</td><td>8</td><td>4</td><td>4</td>
+              <td>15</td><td>5</td><td>5</td><td>0</td><td>0</td><td>25</td><td>12</td><td>13</td>
             </tr>
           </tbody>
         </table>

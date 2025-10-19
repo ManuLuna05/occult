@@ -169,7 +169,7 @@
             <h3>Anterior</h3>
             <div class="mc-card__tags">
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J4</span>
+              <span class="mc-bullet">J5</span>
             </div>
           </div>
 
@@ -180,18 +180,18 @@
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/coto.png') }}" alt="Coto">
-                <span class="mc-team__name">Coto M.M</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+                <span class="mc-team__name">Occult FC</span>
               </div>
 
               <div class="mc-card__center">
-                <div class="mc-card__score">2 <i>-</i> 3</div>
-                <span class="mc-card__date">vie, 10 oct · 22:30 · Estadio: El Carmen</span>
+                <div class="mc-card__score">22 <i>-</i> 0</div>
+                <span class="mc-card__date">dom, 19 oct · 12:00 · Estadio: El Carmen</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
-                <span class="mc-team__name">Occult FC</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/jaimitos.png') }}" alt="Jaimitos">
+                <span class="mc-team__name">Jaimitos</span>
               </div>
             </div>
           </div>
@@ -208,7 +208,7 @@
             <div class="mc-card__tags">
               {{-- quitadas las clases --invert; el dark theme las estiliza solo --}}
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J5</span>
+              <span class="mc-bullet">J6</span>
             </div>
           </div>
 
@@ -219,8 +219,8 @@
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Jaimitos">
-                <span class="mc-team__name">Occult FC</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/gorineta.png') }}" alt="Goryneta">
+                <span class="mc-team__name">Goryneta</span>
               </div>
 
               <div class="mc-card__center">
@@ -229,8 +229,8 @@
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/jaimitos.png') }}" alt="Occult FC">
-                <span class="mc-team__name">Jaimitos</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+                <span class="mc-team__name">Occult FC</span>
               </div>
             </div>
           </div>
@@ -312,9 +312,9 @@
           </div>
 
           <div class="mc-center">
-            <span class="mc-center__date">Por determinar</span>
+            <span class="mc-center__date">dom, 19 oct</span>
             <div class="mc-center__score">
-              <strong>— <i>-</i> —</strong>
+              <strong>22-0</strong>
             </div>
           </div>
 
