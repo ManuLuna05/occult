@@ -1,6 +1,8 @@
 # ⚽ Occult FC — Web Oficial
 
-<img src="./public/images/escudos/logo.png" alt="Logo Occult FC" width="180">
+<p align="center">
+  <img src="./public/images/logo-occulfc.png" alt="Logo Occul FC" width="180">
+</p>
 
 ---
 
@@ -15,12 +17,13 @@ La web busca reflejar la identidad del club con un enfoque visual atractivo, ani
 
 ## 🎨 Colores principales
 
-| Color | Hex | Uso principal |
-|--------|------|---------------|
-| Azul oscuro | `#0A192F` | Fondo principal |
-| Dorado | `#FFD700` | Detalles, botones, acentos |
-| Blanco | `#FFFFFF` | Texto sobre fondos oscuros |
-| Gris claro | `#E0E0E0` | Fondos secundarios y bordes |
+## Colores Principales | Main Colors
+
+| Color             | Hex Code   | Muestra                                                              |
+|------------------|------------|----------------------------------------------------------------------|
+| Azul Principal (Blue)    | `#71B7BC`  | ![#41009d](https://singlecolorimage.com/get/41009d/30x30)            |
+| Blanco (White)            | `#FFFFFF`  | ![#FFFFFF](https://singlecolorimage.com/get/FFFFFF/30x30)            |
+| Negro (Black)             | `#000000`  | ![#000000](https://singlecolorimage.com/get/000000/30x30)            |
 
 > Estos colores reflejan la identidad visual del club: elegancia, fuerza y contraste moderno.
 
