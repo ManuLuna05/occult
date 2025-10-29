@@ -1,6 +1,6 @@
 # ⚽ Occul FC — Web Oficial
 
-![Logo del equipo](./public/images/logo-occulfc.png)
+![Logo del equipo](./public/images/escudos/logo.png)
 
 ---
 
@@ -9,7 +9,7 @@
 Sitio web oficial del **Occul FC**, un proyecto que combina pasión por el fútbol, diseño moderno y una experiencia de usuario limpia e intuitiva.  
 La web busca reflejar la identidad del club con un enfoque visual atractivo, animaciones suaves y una navegación fluida.
 
-👉 **Visita la web aquí:** [https://occulfc.vercel.app](https://occulfc.vercel.app)
+👉 **Visita la web aquí:** [https://occulfc.vercel.app](https://occult-wk19.onrender.com)
 
 ---
 
