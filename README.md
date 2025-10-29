@@ -1,3 +1,76 @@
+# ⚽ Occul FC — Web Oficial
+
+![Logo del equipo](./public/images/logo-occulfc.png)
+
+---
+
+## 🌍 Descripción
+
+Sitio web oficial del **Occul FC**, un proyecto que combina pasión por el fútbol, diseño moderno y una experiencia de usuario limpia e intuitiva.  
+La web busca reflejar la identidad del club con un enfoque visual atractivo, animaciones suaves y una navegación fluida.
+
+👉 **Visita la web aquí:** [https://occulfc.vercel.app](https://occulfc.vercel.app)
+
+---
+
+## 🎨 Colores principales
+
+| Color | Hex | Uso principal |
+|--------|------|---------------|
+| Azul oscuro | `#0A192F` | Fondo principal |
+| Dorado | `#FFD700` | Detalles, botones, acentos |
+| Blanco | `#FFFFFF` | Texto sobre fondos oscuros |
+| Gris claro | `#E0E0E0` | Fondos secundarios y bordes |
+
+> Estos colores reflejan la identidad visual del club: elegancia, fuerza y contraste moderno.
+
+---
+
+## 🧰 Tecnologías utilizadas
+
+| Herramienta | Descripción |
+|--------------|-------------|
+| **Laravel** | Framework backend que estructura la aplicación y gestiona las rutas |
+| **HTML5** | Estructura base de la web |
+| **CSS3** | Estilos personalizados y diseño responsivo |
+| **JavaScript** | Interactividad y dinamismo |
+| **Blade Templates** | Motor de plantillas para las vistas |
+| **Git & GitHub** | Control de versiones y despliegue del proyecto |
+
+---
+
+## 🖼️ Capturas de pantalla
+
+![Página principal](./public/images/homepage-preview.png)
+![Sección del equipo](./public/images/team-section.png)
+![Página de noticias](./public/images/news-section.png)
+
+---
+
+## ⚙️ Funcionalidades destacadas
+
+- Diseño responsive adaptable a dispositivos móviles  
+- Navegación fluida con transiciones suaves  
+- Sección de equipo y jugadores  
+- Noticias y actualizaciones del club  
+- Estilo visual coherente con la identidad del Occul FC  
+
+---
+
+## 👨‍💻 Autor
+
+**Manuel Luna Alarcón**  
+Desarrollador de software con interés en el diseño, la creatividad y la construcción de experiencias digitales.  
+
+📫 [LinkedIn](https://www.linkedin.com/in/manuel-luna-alarcón-b10779370)  
+🌐 [Web del proyecto](https://occulfc.vercel.app)
+
+---
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
