@@ -1,15 +1,15 @@
-# ⚽ Occul FC — Web Oficial
+# ⚽ Occult FC — Web Oficial
 
-![Logo del equipo](./public/images/escudos/logo.png)
+<img src="./public/images/escudos/logo.png" alt="Logo Occult FC" width="180">
 
 ---
 
 ## 🌍 Descripción
 
-Sitio web oficial del **Occul FC**, un proyecto que combina pasión por el fútbol, diseño moderno y una experiencia de usuario limpia e intuitiva.  
+Sitio web oficial del **Occult FC**, un proyecto que combina pasión por el fútbol, diseño moderno y una experiencia de usuario limpia e intuitiva.  
 La web busca reflejar la identidad del club con un enfoque visual atractivo, animaciones suaves y una navegación fluida.
 
-👉 **Visita la web aquí:** [https://occulfc.vercel.app](https://occult-wk19.onrender.com)
+👉 **Visita la web aquí:** [https://occult-wk19.onrender.com](https://occult-wk19.onrender.com)
 
 ---
 
@@ -39,21 +39,13 @@ La web busca reflejar la identidad del club con un enfoque visual atractivo, ani
 
 ---
 
-## 🖼️ Capturas de pantalla
-
-![Página principal](./public/images/homepage-preview.png)
-![Sección del equipo](./public/images/team-section.png)
-![Página de noticias](./public/images/news-section.png)
-
----
-
 ## ⚙️ Funcionalidades destacadas
 
 - Diseño responsive adaptable a dispositivos móviles  
 - Navegación fluida con transiciones suaves  
 - Sección de equipo y jugadores  
 - Noticias y actualizaciones del club  
-- Estilo visual coherente con la identidad del Occul FC  
+- Estilo visual coherente con la identidad del Occult FC  
 
 ---
 
@@ -63,7 +55,7 @@ La web busca reflejar la identidad del club con un enfoque visual atractivo, ani
 Desarrollador de software con interés en el diseño, la creatividad y la construcción de experiencias digitales.  
 
 📫 [LinkedIn](https://www.linkedin.com/in/manuel-luna-alarcón-b10779370)  
-🌐 [Web del proyecto](https://occulfc.vercel.app)
+🌐 [Web del proyecto](https://occult-wk19.onrender.com)
 
 ---
 
