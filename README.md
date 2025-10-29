@@ -1,7 +1,7 @@
 # ⚽ Occult FC — Web Oficial
 
 <p align="center">
-  <img src="./public/images/logo-occulfc.png" alt="Logo Occul FC" width="180">
+  <img src="./public/images/escudos/logo.png" alt="Logo Occul FC" width="180">
 </p>
 
 ---
@@ -21,7 +21,7 @@ La web busca reflejar la identidad del club con un enfoque visual atractivo, ani
 
 | Color             | Hex Code   | Muestra                                                              |
 |------------------|------------|----------------------------------------------------------------------|
-| Azul Principal (Blue)    | `#71B7BC`  | ![#41009d](https://singlecolorimage.com/get/41009d/30x30)            |
+| Morado (Purple)    | `#71B7BC`  | ![#41009d](https://singlecolorimage.com/get/41009d/30x30)            |
 | Blanco (White)            | `#FFFFFF`  | ![#FFFFFF](https://singlecolorimage.com/get/FFFFFF/30x30)            |
 | Negro (Black)             | `#000000`  | ![#000000](https://singlecolorimage.com/get/000000/30x30)            |
 
@@ -62,9 +62,7 @@ Desarrollador de software con interés en el diseño, la creatividad y la constr
 
 ---
 
-
-
-
+Proyecto realizado con Laravel
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
