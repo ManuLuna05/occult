@@ -11,6 +11,7 @@
         <a href="https://www.instagram.com/occultfc_" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
         <a href="https://x.com/OccultFc" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
         <a href="https://www.twitch.tv/occultfc" aria-label="Twitch"><i class="ri-twitch-line"></i></a>
+        <a href="https://www.tiktok.com/@occultfc?_t=ZN-90myYaKBBzy&_r=1" aria-label="Tiktok"><i class="ri-tiktok-line"></i></a>
       </div>
     </div>
 
