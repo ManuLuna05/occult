@@ -1,3 +1,69 @@
+# ⚽ Occult FC — Web Oficial
+
+<p align="center">
+  <img src="./public/images/escudos/logo.png" alt="Logo Occul FC" width="180">
+</p>
+
+---
+
+## 🌍 Descripción
+
+Sitio web oficial del **Occult FC**, un proyecto que combina pasión por el fútbol, diseño moderno y una experiencia de usuario limpia e intuitiva.  
+La web busca reflejar la identidad del club con un enfoque visual atractivo, animaciones suaves y una navegación fluida.
+
+👉 **Visita la web aquí:** [https://occult-wk19.onrender.com](https://occult-wk19.onrender.com)
+
+---
+
+## 🎨 Colores principales
+
+## Colores Principales | Main Colors
+
+| Color             | Hex Code   | Muestra                                                              |
+|------------------|------------|----------------------------------------------------------------------|
+| Morado (Purple)    | `#71B7BC`  | ![#41009d](https://singlecolorimage.com/get/41009d/30x30)            |
+| Blanco (White)            | `#FFFFFF`  | ![#FFFFFF](https://singlecolorimage.com/get/FFFFFF/30x30)            |
+| Negro (Black)             | `#000000`  | ![#000000](https://singlecolorimage.com/get/000000/30x30)            |
+
+> Estos colores reflejan la identidad visual del club: elegancia, fuerza y contraste moderno.
+
+---
+
+## 🧰 Tecnologías utilizadas
+
+| Herramienta | Descripción |
+|--------------|-------------|
+| **Laravel** | Framework backend que estructura la aplicación y gestiona las rutas |
+| **HTML5** | Estructura base de la web |
+| **CSS3** | Estilos personalizados y diseño responsivo |
+| **JavaScript** | Interactividad y dinamismo |
+| **Blade Templates** | Motor de plantillas para las vistas |
+| **Git & GitHub** | Control de versiones y despliegue del proyecto |
+
+---
+
+## ⚙️ Funcionalidades destacadas
+
+- Diseño responsive adaptable a dispositivos móviles  
+- Navegación fluida con transiciones suaves  
+- Sección de equipo y jugadores  
+- Noticias y actualizaciones del club  
+- Estilo visual coherente con la identidad del Occult FC  
+
+---
+
+## 👨‍💻 Autor
+
+**Manuel Luna Alarcón**  
+Desarrollador de software con interés en el diseño, la creatividad y la construcción de experiencias digitales.  
+
+📫 [LinkedIn](https://www.linkedin.com/in/manuel-luna-alarcón-b10779370)  
+🌐 [Web del proyecto](https://occult-wk19.onrender.com)
+
+---
+
+Proyecto realizado con Laravel
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
