@@ -63,7 +63,7 @@
                 <img class="team-logo" src="{{ asset('images/escudos/logo.png') }}" alt="Occult">
                 <span>Occult FC</span>
               </td>
-              <td>15</td><td>5</td><td>5</td><td>0</td><td>0</td><td>38</td><td>10</td><td>28</td>
+              <td>21</td><td>7</td><td>7</td><td>0</td><td>0</td><td>49</td><td>13</td><td>36</td>
             </tr>
 
             <tr>
@@ -72,7 +72,7 @@
                 <img class="team-logo" src="{{ asset('images/escudos/city.png') }}" alt="avanti">
                 <span>CityLogin</span>
               </td>
-              <td>15</td><td>5</td><td>5</td><td>0</td><td>0</td><td>37</td><td>9</td><td>28</td>
+              <td>18</td><td>6</td><td>6</td><td>0</td><td>0</td><td>44</td><td>13</td><td>31</td>
             </tr>
 
             <tr>
@@ -81,7 +81,7 @@
                 <img class="team-logo" src="{{ asset('images/escudos/cachorros.png') }}" alt="gorineta">
                 <span>Cachorros</span>
               </td>
-              <td>15</td><td>5</td><td>5</td><td>0</td><td>0</td><td>25</td><td>12</td><td>13</td>
+              <td>18</td><td>6</td><td>6</td><td>0</td><td>0</td><td>28</td><td>12</td><td>16</td>
             </tr>
           </tbody>
         </table>
