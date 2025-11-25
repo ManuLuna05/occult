@@ -169,7 +169,7 @@
             <h3>Anterior</h3>
             <div class="mc-card__tags">
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J7</span>
+              <span class="mc-bullet">J9</span>
             </div>
           </div>
 
@@ -185,13 +185,13 @@
               </div>
 
               <div class="mc-card__center">
-                <div class="mc-card__score">7 <i>-</i> 1</div>
-                <span class="mc-card__date">dom, 09 nov · 19:00 · Estadio: El Carmen</span>
+                <div class="mc-card__score">2 <i>-</i> 4</div>
+                <span class="mc-card__date">dom, 24 nov · 22:00 · Estadio: Vistalegre</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/arcangel.png') }}" alt="Arcangel">
-                <span class="mc-team__name">Arcangel CF</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/cachorros.png') }}" alt="Cachorros">
+                <span class="mc-team__name">Cachorros</span>
               </div>
             </div>
           </div>
@@ -208,29 +208,29 @@
             <div class="mc-card__tags">
               {{-- quitadas las clases --invert; el dark theme las estiliza solo --}}
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J8</span>
+              <span class="mc-bullet">J10</span>
             </div>
           </div>
 
           <div class="mc-card__body">
             <div class="mc-meta-line mc-meta-line--invert">
-              <span class="mc-status">Por determinar</span>
+              <span class="mc-status">En juego el Viernes</span>
             </div>
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/marketing.png') }}" alt="Marketing">
-                <span class="mc-team__name">Marketing Int</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+                <span class="mc-team__name">Occult FC</span>
               </div>
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">Por determinar</span>
+                <span class="mc-card__date">vie, 28 nov · 21:30 · Estadio: El Carmen</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult">
-                <span class="mc-team__name">Occult FC</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/titanes.png') }}" alt="Titanes del Sur">
+                <span class="mc-team__name">Titanes del Sur</span>
               </div>
             </div>
           </div>
@@ -395,7 +395,7 @@
           <div class="mc-center">
             <span class="mc-center__date">Por determinar</span>
             <div class="mc-center__score">
-              <strong>— <i>-</i> —</strong>
+              <strong>Aplazado</strong>
             </div>
           </div>
 
@@ -419,7 +419,33 @@
           </div>
 
           <div class="mc-center">
-            <span class="mc-center__date">Por determinar</span>
+            <span class="mc-center__date">dom, 24 nov</span>
+            <div class="mc-center__score">
+              <strong>2 <i>-</i> 4</strong>
+            </div>
+          </div>
+
+          <div class="mc-team mc-team--away">
+            
+            <img class="mc-team__crest" src="{{ asset('images/escudos/cachorros.png') }}" alt="Cachorros">
+            <span class="mc-team__name">Cachorros</span>
+          </div>
+        </div>
+      </article>
+      <article class="mc-row">
+        <div class="mc-row__meta">
+          <span class="mc-chip">SEVEN LEAGUE</span>
+          <span class="mc-bullet">J10</span>
+        </div>
+
+        <div class="mc-row__content">
+          <div class="mc-team">
+            <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Marketing">
+            <span class="mc-team__name">Occult FC</span>
+          </div>
+
+          <div class="mc-center">
+            <span class="mc-center__date">vie, 28 nov</span>
             <div class="mc-center__score">
               <strong>— <i>-</i> —</strong>
             </div>
@@ -427,11 +453,41 @@
 
           <div class="mc-team mc-team--away">
             
-            <img class="mc-team__crest" src="{{ asset('images/escudos/james.png') }}" alt="James">
-            <span class="mc-team__name">James WH</span>
+            <img class="mc-team__crest" src="{{ asset('images/escudos/titanes.png') }}" alt="Titanes del Sur">
+            <span class="mc-team__name">Titanes del Sur</span>
           </div>
         </div>
       </article>
+
+    <section class="mc-month">
+      <h2 class="mc-month__title">Diciembre</h2>
+    </section>
+        <article class="mc-row">
+          <div class="mc-row__meta">
+            <span class="mc-chip">SEVEN LEAGUE</span>
+            <span class="mc-bullet">J11</span>
+          </div>
+
+          <div class="mc-row__content">
+            <div class="mc-team">
+              <img class="mc-team__crest" src="{{ asset('images/escudos/city.png') }}" alt="citylogin">
+              <span class="mc-team__name">citylogin</span>
+            </div>
+
+            <div class="mc-center">
+              <span class="mc-center__date">Por determinar</span>
+              <div class="mc-center__score">
+                <strong>— <i>-</i> —</strong>
+              </div>
+            </div>
+
+            <div class="mc-team mc-team--away">
+              
+              <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+              <span class="mc-team__name">Occult FC</span>
+            </div>
+          </div>
+        </article>
 
     <footer style="height:48px"></footer>
   </div>
