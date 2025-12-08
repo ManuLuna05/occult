@@ -9,6 +9,7 @@
     <nav class="main-nav">
       <a href="{{ route('contenido') }}"     class="menu-link {{ request()->routeIs('contenido') ? 'active' : '' }}">Contenido</a>
       <a href="{{ route('calendario') }}"    class="menu-link {{ request()->routeIs('calendario') ? 'active' : '' }}">Calendario</a>
+      <a href="{{ route('plantilla') }}"    class="menu-link {{ request()->routeIs('plantilla') ? 'active' : '' }}">Plantilla</a>
       <a href="{{ route('clasificacion') }}" class="menu-link {{ request()->routeIs('clasificacion') ? 'active' : '' }}">Clasificación</a>
     </nav>
 

@@ -293,10 +293,8 @@ html, body { overflow-x: hidden; }
 
 
 
-
-
 :root{
-  --verde: #41009d;                /* verde club (ajústalo) */
+  --verde: #41009d;
   --card-bg: #fff;
   --card-radius: 16px;
 }
@@ -535,3 +533,4 @@ html, body { overflow-x: hidden; }
   .pc-photo{ width: 140px; height: 140px; }
   .player-card{ aspect-ratio: 1 / 1.1; }
 }
+

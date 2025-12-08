@@ -4,7 +4,6 @@
   <div class="squad-grid">
     @foreach ($players as $player)
       @include('partials.player-card', ['player' => $player])
-      {{-- O: @each('partials.player-card', $players, 'player') --}}
     @endforeach
   </div>
 </section>
