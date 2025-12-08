@@ -21,6 +21,7 @@
       <ul class="footer-links">
         <li><a href="/">Inicio</a></li>
         <li><a href="/contenido">Contenido</a></li>
+        <li><a href="/plantilla">Plantilla</a></li>
         <li><a href="/calendario">Calendario</a></li>
       </ul>
     </div>
