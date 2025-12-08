@@ -169,7 +169,7 @@
             <h3>Anterior</h3>
             <div class="mc-card__tags">
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J10</span>
+              <span class="mc-bullet">J8 (Aplazado)</span>
             </div>
           </div>
 
@@ -180,18 +180,18 @@
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult">
-                <span class="mc-team__name">Occult FC</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/marketing.png') }}" alt="Marketing In">
+                <span class="mc-team__name">Marketing In/span>
               </div>
 
               <div class="mc-card__center">
-                <div class="mc-card__score">4 <i>-</i> 5</div>
-                <span class="mc-card__date">dom, 24 nov · 22:00 · Estadio: Vistalegre</span>
+                <div class="mc-card__score">3 <i>-</i> 8</div>
+                <span class="mc-card__date">dom, 07 dic · 22:00 · Estadio: Vistalegre</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/titanes.png') }}" alt="Titanes">
-                <span class="mc-team__name">Titanes</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+                <span class="mc-team__name">Occult FC</span>
               </div>
             </div>
           </div>
@@ -208,24 +208,24 @@
             <div class="mc-card__tags">
               {{-- quitadas las clases --invert; el dark theme las estiliza solo --}}
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J8 (Aplazado)</span>
+              <span class="mc-bullet">J11</span>
             </div>
           </div>
 
           <div class="mc-card__body">
             <div class="mc-meta-line mc-meta-line--invert">
-              <span class="mc-status">En juego el Domingo</span>
+              <span class="mc-status">Por determinar</span>
             </div>
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/marketing.png') }}" alt="Marketing In.">
-                <span class="mc-team__name">Marketing In.</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/city.png') }}" alt="Citylogin">
+                <span class="mc-team__name">Citylogin</span>
               </div>
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">dom, 07 dic · 22:00 · Estadio: El Carmen</span>
+                <span class="mc-card__date">Por determinar</span>
               </div>
 
               <div class="mc-team mc-team--away">
@@ -451,7 +451,7 @@
             <div class="mc-center">
               <span class="mc-center__date">dom, 07 dic</span>
               <div class="mc-center__score">
-                <strong>— <i>-</i> —</strong>
+                <strong>3 <i>-</i> 8</strong>
               </div>
             </div>
 
@@ -485,6 +485,58 @@
               
               <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
               <span class="mc-team__name">Occult FC</span>
+            </div>
+          </div>
+        </article>
+        <article class="mc-row">
+          <div class="mc-row__meta">
+            <span class="mc-chip">SEVEN LEAGUE</span>
+            <span class="mc-bullet">J12</span>
+          </div>
+
+          <div class="mc-row__content">
+            <div class="mc-team">
+              <img class="mc-team__crest" src="{{ asset('images/escudos/avanti.png') }}" alt="New Avanti">
+              <span class="mc-team__name">New Avanti</span>
+            </div>
+
+            <div class="mc-center">
+              <span class="mc-center__date">Por determinar</span>
+              <div class="mc-center__score">
+                <strong>— <i>-</i> —</strong>
+              </div>
+            </div>
+
+            <div class="mc-team mc-team--away">
+              
+              <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+              <span class="mc-team__name">Occult FC</span>
+            </div>
+          </div>
+        </article>
+        <article class="mc-row">
+          <div class="mc-row__meta">
+            <span class="mc-chip">SEVEN LEAGUE</span>
+            <span class="mc-bullet">J13</span>
+          </div>
+
+          <div class="mc-row__content">
+            <div class="mc-team">
+              <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+              <span class="mc-team__name">Occult FC</span>
+            </div>
+
+            <div class="mc-center">
+              <span class="mc-center__date">Por determinar</span>
+              <div class="mc-center__score">
+                <strong>— <i>-</i> —</strong>
+              </div>
+            </div>
+
+            <div class="mc-team mc-team--away">
+              
+              <img class="mc-team__crest" src="{{ asset('images/escudos/james.png') }}" alt="James Webb">
+              <span class="mc-team__name">James Webb</span>
             </div>
           </div>
         </article>
