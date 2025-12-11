@@ -373,7 +373,7 @@ class HomeController extends Controller
                 'month' => 'Diciembre',
                 'competition' => 'SEVEN LEAGUE',
                 'round' => 'J11',
-                'date_text' => '—',
+                'date_text' => 'dom, 14 dic',
                 'home' => ['name' => 'citylogin', 'logo' => 'images/escudos/city.png'],
                 'away' => ['name' => 'Occult FC', 'logo' => 'images/escudos/logo.png'],
                 'score' => null

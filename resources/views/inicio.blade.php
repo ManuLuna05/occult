@@ -75,6 +75,23 @@
         margin: 8px 0 0;
         opacity: .85;
     }
+    /* ===== BANNER RESPONSIVE, FINO, CENTRADO ===== */
+    .sponsor-strip-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;   /* imagen siempre centrada */
+        margin: 40px 0;            /* separación respecto a secciones */
+    }
+
+    .sponsor-strip {
+        width: 90%;                /* escala proporcional al viewport */
+        max-width: 1050px;         /* límite en pantallas grandes */
+        aspect-ratio: 14 / 2;      /* proporción del banner (ajústala si quieres más fino o más alto) */
+        object-fit: cover;         /* recorte elegante sin deformar */
+        display: block;
+        height: auto;              /* se calcula automáticamente */
+    }
+
 
   </style>
 
@@ -83,6 +100,13 @@
     @include('partials.squad')
     <a href="{{ route('plantilla') }}" class="btn-ver-mas">Ver más</a>
   </div>
+
+
+    <div class="sponsor-strip-wrapper">
+        <img src="{{ asset('images/sponsors/ligabanner.png') }}"
+            alt="Banner"
+            class="sponsor-strip">
+    </div>
 
   <section class="home-section">
       <h2 class="home-section-title">Próximos Partidos</h2>
@@ -96,7 +120,11 @@
     <a class="btn-ver-mas" href="{{ route('calendario') }}">Ver más</a>
   </section>
 
-
+    <div class="sponsor-strip-wrapper">
+        <img src="{{ asset('images/sponsors/dzalgbanner.png') }}"
+            alt="Banner"
+            class="sponsor-strip">
+    </div>
 
   {{-- ========================================================
         SECCIÓN 3: RESUMEN DE LA LIGA
@@ -108,6 +136,12 @@
 
       <a href="{{ route('clasificacion') }}" class="btn-ver-mas">Ver más</a>
   </section>
+
+    <div class="sponsor-strip-wrapper">
+        <img src="{{ asset('images/sponsors/lionebanner.png') }}"
+            alt="Banner"
+            class="sponsor-strip">
+    </div>
 
   {{-- ========================================================
         SECCIÓN 4: ÚLTIMAS NOTICIAS / GALERÍA
