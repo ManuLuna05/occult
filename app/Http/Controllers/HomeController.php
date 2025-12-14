@@ -376,7 +376,7 @@ class HomeController extends Controller
                 'date_text' => 'dom, 14 dic',
                 'home' => ['name' => 'citylogin', 'logo' => 'images/escudos/city.png'],
                 'away' => ['name' => 'Occult FC', 'logo' => 'images/escudos/logo.png'],
-                'score' => null
+                'score' => [3, 5]
             ],
 
             [
