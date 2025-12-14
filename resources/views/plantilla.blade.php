@@ -17,7 +17,7 @@
 
   {{-- Resto de contenido dentro de container sin margen arriba --}}
   <div class="container-no-top">
-    @include('partials.squad')
+    @include('partials.squad-grouped')
   </div>
 
   <div class="eterno-occult">¡ETERNO OCCULT!</div>
