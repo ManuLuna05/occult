@@ -22,3 +22,57 @@
 }
 @media (max-width: 980px){ .squad-grid{ grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 620px){ .squad-grid{ grid-template-columns: 1fr; } }
+
+/* ===================== SECCIONES DE PLANTILLA ===================== */
+.squad-role-block{
+  margin-top: 48px;          /* separación clara entre secciones */
+}
+
+.squad-role-head{
+  margin-bottom: 22px;       /* aire entre título y tarjetas */
+}
+
+/* Título de sección */
+.squad-role-title{
+  font-size: 22px;
+  font-weight: 900;          /* bien contundente */
+  letter-spacing: .12em;     /* look más premium */
+  color: #41009d;            /* morado Occult */
+  margin: 0;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Detalle decorativo (línea vertical) */
+.squad-role-title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 6px;
+  height: 80%;
+  background: linear-gradient(
+    180deg,
+    #41009d,
+    rgba(65,0,157,.25)
+  );
+  border-radius: 3px;
+}
+
+/* Separación extra entre cards dentro del grid */
+.squad-grid{
+  gap: 24px;                 /* antes estaban muy pegadas */
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px){
+  .squad-role-block{
+    margin-top: 36px;
+  }
+
+  .squad-role-title{
+    font-size: 18px;
+    letter-spacing: .1em;
+  }
+}

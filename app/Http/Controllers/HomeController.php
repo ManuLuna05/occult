@@ -223,7 +223,13 @@ class HomeController extends Controller
             // ...más jugadores
         ];
 
-        return view('plantilla', compact('players'));
+        // Agrupar por posición/rol (como meses en calendario)
+        $playersByRole = collect($players)->groupBy('role');
+
+        // IMPORTANTE: mandamos las dos variables para no romper nada
+        return view('plantilla', compact('players', 'playersByRole'));
+
+
     }
 
     public function calendario()
