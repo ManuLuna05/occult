@@ -73,7 +73,7 @@
 
           <div class="mc-card__body">
             <div class="mc-meta-line mc-meta-line--invert">
-              <span class="mc-status">Por determinar</span>
+              <span class="mc-status">En juego el domingo</span>
             </div>
 
             <div class="mc-card__teams">
@@ -84,7 +84,7 @@
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">Por determinar</span>
+                <span class="mc-card__date">dom, 21 dic · 19:00 · Estadio: El Carmen</span>
               </div>
 
               <div class="mc-team mc-team--away">

@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="/css/contenido.css">
   <link rel="stylesheet" href="/css/clasificacion.css">
   <link rel="stylesheet" href="/css/calendario.css">
+  <link rel="stylesheet" href="/css/jugador.css">
 </head>
 <body>
   @include('partials.header')

@@ -101,13 +101,6 @@
     <a href="{{ route('plantilla') }}" class="btn-ver-mas">Ver más</a>
   </div>
 
-
-    <div class="sponsor-strip-wrapper">
-        <img src="{{ asset('images/sponsors/ligabanner.png') }}"
-            alt="Banner"
-            class="sponsor-strip">
-    </div>
-
   <section class="home-section">
       <h2 class="home-section-title">Próximos Partidos</h2>
 
@@ -120,12 +113,6 @@
     <a class="btn-ver-mas" href="{{ route('calendario') }}">Ver más</a>
   </section>
 
-    <div class="sponsor-strip-wrapper">
-        <img src="{{ asset('images/sponsors/dzalgbanner.png') }}"
-            alt="Banner"
-            class="sponsor-strip">
-    </div>
-
   {{-- ========================================================
         SECCIÓN 3: RESUMEN DE LA LIGA
   ========================================================= --}}
@@ -137,11 +124,6 @@
       <a href="{{ route('clasificacion') }}" class="btn-ver-mas">Ver más</a>
   </section>
 
-    <div class="sponsor-strip-wrapper">
-        <img src="{{ asset('images/sponsors/lionebanner.png') }}"
-            alt="Banner"
-            class="sponsor-strip">
-    </div>
 
   {{-- ========================================================
         SECCIÓN 4: ÚLTIMAS NOTICIAS / GALERÍA

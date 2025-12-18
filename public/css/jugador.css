@@ -1,0 +1,492 @@
+.player-page{
+  background:#f6f8fb;
+  --bar-height: 95px;
+  --kpi-half: 72px;
+
+  /* ajuste fino opcional (normalmente 0px) */
+  --player-drop-offset: 0px;
+}
+
+
+/* =========================================================
+   HERO estilo Málaga:
+   - Fondo oscuro (imagen) hasta justo antes de la franja
+   - Franja morada abajo (más corta)
+   - KPIs cruzan morado/blanco (fuera del hero)
+   - Jugador sale desde la zona blanca
+   ========================================================= */
+
+.player-hero{
+  position: relative;
+  color:#fff;
+  overflow:visible;
+
+  padding-top: 10px;
+  padding-bottom: calc(var(--bar-height) + var(--kpi-half));
+}
+
+/* Fondo con imagen (todo el hero EXCEPTO la franja morada) */
+.player-hero::before{
+  content:"";
+  position:absolute;
+  left:0; right:0; top:0;
+  height: calc(100% - var(--bar-height));
+
+  background-image: url('/images/player-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 0;
+  pointer-events:none;
+}
+
+/* Overlay suave solo en la zona de imagen */
+.player-hero::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; top:0;
+  height: calc(100% - var(--bar-height));
+
+  background: linear-gradient(
+    to bottom,
+    rgba(5,6,10,.16),
+    rgba(5,6,10,.38)
+  );
+
+  z-index: 1;
+  pointer-events:none;
+}
+
+/* Franja morada inferior (como la azul del Málaga) */
+.player-hero{
+  background-image: linear-gradient(#41009d, #41009d);
+  background-repeat: no-repeat;
+  background-size: 100% var(--bar-height);
+  background-position: left bottom;
+}
+
+/* =========================================================
+   GRID 3 columnas: izquierda / centro / derecha
+   ========================================================= */
+
+.player-hero__inner{
+  max-width: 1360px;              /* antes 1280px */
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display:grid;
+  grid-template-columns: 1.45fr 0.8fr 1.45fr; /* laterales más lejos, centro más compacto */
+  gap: 56px;                     /* antes 44px */
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* IZQUIERDA */
+.player-hero__left{
+  position: relative;
+  z-index: 2;
+}
+
+.player-hero__name{
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  line-height: 1.05;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.player-hero__meta{
+  margin-top: 22px;
+  max-width: 360px;
+}
+
+.player-hero__row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.80);
+  font-weight: 700;
+}
+
+.player-hero__row b{
+  color:#fff;
+  font-weight: 900;
+}
+
+/* CENTRO (jugador + dorsal) */
+.player-hero__center{
+  min-width: 460px;      /* NUEVO */
+  min-height: 440px;
+
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+
+  position: relative;
+  z-index: 20;
+}
+
+
+/* dorsal detrás */
+.player-hero__number{
+  position:absolute;
+  left:50%;
+  top: 56%;
+  transform: translate(-50%, -50%);
+
+  font-size: 360px;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(210, 184, 225, 0.742);
+  user-select:none;
+
+  z-index: 1;
+}
+
+/* Foto: baja para “nacer” desde el blanco */
+.player-hero__photo{
+  width: 420px;
+  max-width: none;
+  max-height: 720px;
+  height: auto;
+  object-fit: contain;
+
+  position: relative;
+  z-index: 21;
+
+  /* SIEMPRE alineado a la línea morado/blanco */
+  transform: translateY(calc(var(--bar-height) + var(--kpi-half) + var(--player-drop-offset)));
+  transform-origin: bottom center;
+}
+
+
+/* DERECHA */
+.player-hero__right{
+  text-align: right;
+  position: relative;
+  z-index: 2;
+}
+
+.player-hero__pos-label{
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.70);
+  text-transform: uppercase;
+}
+
+.player-hero__pos-value{
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.player-hero__pos-line{
+  width: 54px;
+  height: 3px;
+  background: #41009d;
+  margin-left: auto;
+  margin-top: 14px;
+  border-radius: 999px;
+}
+
+.player-hero__right .player-hero__meta{
+  margin-left:auto;
+  margin-top: 22px;
+  max-width: 360px;
+}
+
+/* =========================================================
+   KPIs cruzando la frontera morado/blanco
+   - salen fuera del hero (mitad en morado, mitad en blanco)
+   ========================================================= */
+
+.player-kpis{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display:flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  position: absolute;
+  left:0; right:0;
+
+  /* CLAVE: bajamos el bloque para que se salga del hero */
+  bottom: calc(var(--kpi-half) * -1);
+
+  z-index: 80;
+  pointer-events: auto;
+}
+
+.kpi{
+  background:#fff;
+  border-radius: 14px;
+  padding: 18px 22px;
+  min-width: 160px;
+  box-shadow: 0 12px 30px rgba(16, 23, 40, .12);
+  text-align:center;
+}
+
+.kpi__label{
+  font-size: 12px;
+  font-weight: 900;
+  color:#0f1220;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.kpi__value{
+  margin-top: 6px;
+  font-size: 44px;
+  font-weight: 900;
+  color: #41009d;
+}
+
+/* =========================================================
+   CONTENIDO BLANCO DE ABAJO
+   - empujamos hacia abajo lo suficiente para no pisar las KPIs
+   ========================================================= */
+
+.player-content{
+  max-width: 1120px;
+  margin: 0 auto;
+
+  /* deja hueco = la mitad que cae en blanco + aire */
+  padding: calc(72px + var(--kpi-half)) 20px 80px;
+}
+
+.player-content__title{
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0 0 18px;
+}
+
+.player-bio__card{
+  background:#fff;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 12px 30px rgba(16, 23, 40, .08);
+}
+
+.player-bio__name{
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.player-bio__text{
+  margin:0;
+  color:#2b2f3a;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 980px){
+  .player-hero{
+    --bar-height: 80px;
+    --kpi-half: 58px;
+    padding-top: 34px;
+  }
+
+  .player-hero__inner{
+    grid-template-columns: 1fr;
+    text-align:center;
+    gap: 18px;
+  }
+
+  .player-hero__left{ order: 1; }
+  .player-hero__right{ order: 2; text-align:center; }
+  .player-hero__center{ order: 3; min-height: 360px; }
+
+  .player-hero__name{ font-size: 44px; }
+
+  .player-hero__pos-line{ margin: 14px auto 0; }
+
+  .player-hero__meta{
+    margin: 14px auto 0;
+    max-width: 420px;
+  }
+
+  .player-hero__number{
+    font-size: 220px;
+    top: 54%;
+  }
+
+  .player-hero__photo{
+    width: 320px;
+  }
+
+  .player-kpis{ gap: 14px; }
+  .kpi{ min-width: 150px; }
+  .kpi__value{ font-size: 40px; }
+}
+
+/* =========================================================
+   RESPONSIVE PRO (sin roturas)
+   - 3 escalones: <=1200 (tablet horizontal), <=980 (tablet), <=560 (móvil)
+   ========================================================= */
+
+/* 1) Pantallas medianas: reducimos “aperturas” y quitamos el min-width agresivo */
+@media (max-width: 1200px){
+  .player-hero__inner{
+    max-width: 1120px;
+    grid-template-columns: 1.2fr 0.95fr 1.2fr;
+    gap: 36px;
+  }
+
+  .player-hero__center{
+    min-width: 0;        /* CLAVE: que no fuerce el grid */
+    min-height: 420px;
+  }
+
+  .player-hero__photo{
+    width: 390px;
+  }
+
+  .player-hero__number{
+    font-size: 320px;
+  }
+}
+
+/* 2) Tablet/móvil: pasamos a 1 columna (orden limpio) */
+@media (max-width: 980px){
+  .player-hero{
+    --bar-height: 80px;
+    --kpi-half: 58px;
+    padding-top: 26px;
+  }
+
+  .player-hero__inner{
+    max-width: 720px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+
+  /* Orden: nombre+izq, posición+dcha, jugador, KPIs */
+  .player-hero__left{ order: 1; }
+  .player-hero__right{ order: 2; text-align:center; }
+  .player-hero__center{ order: 3; }
+
+  .player-hero__name{
+    font-size: 44px;
+  }
+
+  .player-hero__meta{
+    margin: 14px auto 0;
+    max-width: 520px;
+  }
+
+  /* filas centradas pero manteniendo “label izquierda / valor derecha” */
+  .player-hero__row{
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .player-hero__pos-line{
+    margin: 14px auto 0;
+  }
+
+  .player-hero__center{
+    min-width: 0;
+    min-height: 380px;
+  }
+
+  .player-hero__number{
+    font-size: 240px;
+    top: 54%;
+  }
+
+  .player-hero__photo{
+    width: 320px;
+    max-width: 90vw;
+  }
+
+  .player-kpis{
+    gap: 14px;
+    padding: 0 16px;
+  }
+
+  .kpi{
+    min-width: 150px;
+  }
+
+  .kpi__value{
+    font-size: 40px;
+  }
+
+  /* Más aire para la bio en móvil (para que no quede “pegada”) */
+  .player-content{
+    padding: calc(84px + var(--kpi-half)) 16px 70px;
+  }
+}
+
+/* 3) Móvil pequeño: KPIs en 2 columnas y jugador más compacto */
+@media (max-width: 560px){
+  .player-hero{
+    --bar-height: 72px;
+    --kpi-half: 54px;
+    padding-top: 18px;
+  }
+
+  .player-hero__name{
+    font-size: 38px;
+  }
+
+  .player-hero__meta{
+    max-width: 100%;
+  }
+
+  .player-hero__row{
+    font-size: 14px;
+    padding: 9px 0;
+  }
+
+  .player-hero__center{
+    min-height: 340px;
+  }
+
+  .player-hero__number{
+    font-size: 210px;
+  }
+
+  .player-hero__photo{
+    width: 290px;
+  }
+
+  /* KPIs: 2 columnas (y si hay 3, la 3ª baja sola) */
+  .player-kpis{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 520px;
+  }
+
+  .kpi{
+    min-width: 0;
+    padding: 16px 14px;
+  }
+
+  .kpi__value{
+    font-size: 36px;
+  }
+
+  .player-content{
+    padding: calc(96px + var(--kpi-half)) 16px 64px;
+  }
+}
