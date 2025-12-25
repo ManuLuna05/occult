@@ -42,9 +42,9 @@ class HomeController extends Controller
                 'role'    => 'Portero',
                 'photo'   => 'manu-moreno.jpg',
                 'photo_full' => 'manu-moreno-full.png',
-                'minutes' => 607,
+                'minutes' => 657,
                 'goals'   => 0,
-                'matches' => 12,
+                'matches' => 13,
 
                 // NUEVOS (ficha)
                 'birth'   => '1999-04-29',
@@ -57,12 +57,12 @@ class HomeController extends Controller
 
                 // Stats extendidas (las que quieras usar en la ficha)
                 'stats' => [
-                    'matches' => 12,
-                    'minutes' => 607,
+                    'matches' => 13,
+                    'minutes' => 657,
                     'goals'   => 0,
-                    'assists' => 0,
-                    'saves'   => 30,
-                    'clean_sheets' => 1,
+                    'assists' => 1,
+                    'saves'   => 40,
+                    'clean_sheets' => 2,
                 ],
             ],
             [
@@ -240,9 +240,9 @@ class HomeController extends Controller
                 'role'    => 'Defensa',
                 'photo'   => 'alberto.jpg',
                 'photo_full' => 'alberto-full.png',
-                'minutes' => 80,
+                'minutes' => 110,
                 'goals'   => 0,
-                'matches' => 3,
+                'matches' => 4,
 
                 'birth'   => '2005-04-06',
                 'age'     => 20,
@@ -253,8 +253,8 @@ class HomeController extends Controller
                 'bio'     => 'Central sólido y fiable, sobresale por su inteligencia táctica y su capacidad para anticiparse a las acciones del rival mediante una correcta lectura del juego. Combina velocidad y potencia física, lo que le permite abarcar amplias zonas del campo y responder con solvencia en distintas situaciones defensivas. A lo largo de la temporada ha experimentado una notable evolución en su rendimiento, afianzándose como una pieza importante en la zaga del equipo. Su actitud, constancia y compromiso diario le han permitido crecer de forma continuada y ganarse la confianza tanto del cuerpo técnico como del vestuario.',
 
                 'stats' => [
-                    'matches' => 3,
-                    'minutes' => 80,
+                    'matches' => 4,
+                    'minutes' => 110,
                     'goals'   => 0,
                     'assists' => 0,
                     'saves'   => null,
@@ -295,9 +295,9 @@ class HomeController extends Controller
                 'role'    => 'Defensa',
                 'photo'   => 'marcos.jpg',
                 'photo_full' => 'marcos-full.png',
-                'minutes' => 230,
+                'minutes' => 260,
                 'goals'   => 3,
-                'matches' => 10,
+                'matches' => 11,
 
                 'birth'   => '2005-01-29',
                 'age'     => 20,
@@ -308,8 +308,8 @@ class HomeController extends Controller
                 'bio'     => 'Central versátil y completo con capacidad de delantero gracias al cuerpeo físico y buena definición de cara a portería. Destaca por su inteligencia táctica, su capacidad para anticiparse a las jugadas y su eficacia en el juego aéreo, tanto en defensa como en ataque. A lo largo de la temporada ha demostrado una gran regularidad, contribuyendo con goles importantes en jugadas a balón parado y siendo un pilar fundamental en la zaga del equipo. Su compromiso, profesionalidad y liderazgo le han convertido en un referente dentro del vestuario, ganándose el respeto y la admiración de sus compañeros y rivales.',
 
                 'stats' => [
-                    'matches' => 10,
-                    'minutes' => 230,
+                    'matches' => 11,
+                    'minutes' => 260,
                     'goals'   => 3,
                     'assists' => 0,
                     'saves'   => null,
@@ -323,9 +323,9 @@ class HomeController extends Controller
                 'role'    => 'Lateral',
                 'photo'   => 'chechu.jpg',
                 'photo_full' => 'chechu-full.png',
-                'minutes' => 340,
+                'minutes' => 390,
                 'goals'   => 5,
-                'matches' => 8,
+                'matches' => 9,
 
                 'birth'   => '2005-12-10',
                 'age'     => 20,
@@ -336,8 +336,8 @@ class HomeController extends Controller
                 'bio'     => 'Lateral ofensivo y dinámico, destaca por su capacidad para incorporarse al ataque y su precisión en los centros. Su velocidad y resistencia le permiten recorrer toda la banda, siendo un jugador clave en la creación de oportunidades de gol. A lo largo de la temporada ha demostrado una gran regularidad, aportando asistencias importantes y contribuyendo en defensa con su entrega y sacrificio. Su versatilidad le permite adaptarse a diferentes roles dentro del equipo, siendo una pieza fundamental en el esquema táctico del entrenador.',
 
                 'stats' => [
-                    'matches' => 8,
-                    'minutes' => 340,
+                    'matches' => 9,
+                    'minutes' => 390,
                     'goals'   => 5,
                     'assists' => 12,
                     'saves'   => null,
@@ -351,9 +351,9 @@ class HomeController extends Controller
                 'role'    => 'Mediocentro',
                 'photo'      => 'unai.jpg',      // la de la card
                 'photo_full' => 'unai-full.png',
-                'minutes' => 440,
+                'minutes' => 480,
                 'goals'   => 12,
-                'matches' => 11,
+                'matches' => 12,
 
                 'birth'   => '2005-04-19',
                 'age'     => 20,
@@ -364,8 +364,8 @@ class HomeController extends Controller
                 'bio'     => 'Mediocentro creativo y con gran visión de juego, destaca por su capacidad para distribuir el balón y generar oportunidades de gol para sus compañeros. Su técnica depurada y su inteligencia táctica le permiten controlar el ritmo del partido desde el centro del campo, siendo un jugador clave en la transición entre defensa y ataque. A lo largo de la temporada ha demostrado una gran regularidad, contribuyendo con goles y asistencias decisivas que han sido fundamentales para el éxito del equipo. Su compromiso, profesionalidad y liderazgo le han convertido en un referente dentro del vestuario, ganándose el respeto y la admiración de sus compañeros y rivales.',
 
                 'stats' => [
-                    'matches' => 11,
-                    'minutes' => 440,
+                    'matches' => 12,
+                    'minutes' => 480,
                     'goals'   => 12,
                     'assists' => 7,
                     'saves'   => null,
@@ -407,9 +407,9 @@ class HomeController extends Controller
                 'role'    => 'Mediocentro',
                 'photo'   => 'antonio.jpg',
                 'photo_full' => 'antonio-full.png',
-                'minutes' => 480,
-                'goals'   => 11,
-                'matches' => 12,
+                'minutes' => 530,
+                'goals'   => 12,
+                'matches' => 13,
 
                 'birth'   => '2005-01-16',
                 'age'     => 20,
@@ -420,9 +420,9 @@ class HomeController extends Controller
                 'bio'     => 'Mediocentro ofensivo y creativo, destaca por su visión de juego y su capacidad para generar oportunidades de gol. Su técnica depurada y su habilidad para encontrar espacios en la defensa rival le convierten en un jugador clave en la creación de juego del equipo. A lo largo de la temporada ha demostrado una gran regularidad, contribuyendo con goles y asistencias decisivas que han sido fundamentales para el éxito del equipo. Su compromiso, profesionalidad y liderazgo le han convertido en un referente dentro del vestuario, ganándose el respeto y la admiración de sus compañeros y rivales.',
 
                 'stats' => [
-                    'matches' => 12,
-                    'minutes' => 480,
-                    'goals'   => 11,
+                    'matches' => 13,
+                    'minutes' => 530,
+                    'goals'   => 12,
                     'assists' => 9,
                     'saves'   => null,
                     'clean_sheets' => null,
@@ -435,9 +435,9 @@ class HomeController extends Controller
                 'role'    => 'Mediocentro',
                 'photo'   => 'nacho.jpg',
                 'photo_full' => 'nacho-full.png',
-                'minutes' => 350,
+                'minutes' => 400,
                 'goals'   => 8,
-                'matches' => 9,
+                'matches' => 10,
 
                 'birth'   => '2005-04-04',
                 'age'     => 20,
@@ -448,8 +448,8 @@ class HomeController extends Controller
                 'bio'     => 'Mediocentro defensivo que sobresale por su capacidad para recuperar balones y por su inteligencia táctica a la hora de organizar y distribuir el juego desde el centro del campo. Su buen posicionamiento y lectura de las jugadas le permiten anticiparse al rival y cortar numerosas acciones ofensivas, aportando equilibrio al equipo. Destaca también por su resistencia física y su constancia durante los partidos, siendo una pieza fundamental en la transición entre defensa y ataque. A lo largo de la temporada ha experimentado una notable progresión en su rendimiento, ganándose la confianza del cuerpo técnico gracias a su compromiso, esfuerzo diario y dedicación tanto en los entrenamientos como en la competición.',
 
                 'stats' => [
-                    'matches' => 9,
-                    'minutes' => 350,
+                    'matches' => 10,
+                    'minutes' => 400,
                     'goals'   => 8,
                     'assists' => 0,
                     'saves'   => null,
@@ -463,9 +463,9 @@ class HomeController extends Controller
                 'role'    => 'Mediocentro',
                 'photo'   => 'bonilla.jpg',
                 'photo_full' => 'bonilla-full.png',
-                'minutes' => 260,
+                'minutes' => 310,
                 'goals'   => 8,
-                'matches' => 7,
+                'matches' => 8,
 
                 'birth'   => '2005-02-22',
                 'age'     => 20,
@@ -476,8 +476,8 @@ class HomeController extends Controller
                 'bio'     => 'Mediocentro ofensivo, destaca por su potencia de tiro y su capacidad para llegar desde segunda línea al área rival. Su técnica depurada y su visión de juego le permiten generar peligro en ataque, siendo un jugador clave en la creación de oportunidades de gol. A lo largo de la temporada ha demostrado una gran regularidad, contribuyendo con goles y asistencias decisivas que han sido fundamentales para el éxito del equipo. Su compromiso, profesionalidad y liderazgo le han convertido en un referente dentro del vestuario, ganándose el respeto y la admiración de sus compañeros y rivales.',
 
                 'stats' => [
-                    'matches' => 7,
-                    'minutes' => 260,
+                    'matches' => 8,
+                    'minutes' => 310,
                     'goals'   => 8,
                     'assists' => 4,
                     'saves'   => null,
@@ -491,9 +491,9 @@ class HomeController extends Controller
                 'role'    => 'Delantero',
                 'photo'   => 'hugo.jpg',
                 'photo_full' => 'hugo-full.png',
-                'minutes' => 280,
+                'minutes' => 320,
                 'goals'   => 16,
-                'matches' => 8,
+                'matches' => 9,
 
                 'birth'   => '2005-12-13',
                 'age'     => 20,
@@ -504,8 +504,8 @@ class HomeController extends Controller
                 'bio'     => 'Delantero potente y goleador, destaca por su capacidad para definir con precisión en el área rival. Su fuerza física y su habilidad para desmarcarse le convierten en un jugador difícil de defender, siendo una amenaza constante para las defensas rivales. A lo largo de la temporada ha demostrado una gran regularidad, contribuyendo con goles decisivos que han sido fundamentales para el éxito del equipo. Su compromiso, profesionalidad y liderazgo le han convertido en un referente dentro del vestuario, ganándose el respeto y la admiración de sus compañeros y rivales.',
 
                 'stats' => [
-                    'matches' => 8,
-                    'minutes' => 280,
+                    'matches' => 9,
+                    'minutes' => 320,
                     'goals'   => 16,
                     'assists' => 3,
                     'saves'   => null,
@@ -519,21 +519,21 @@ class HomeController extends Controller
                 'role'    => 'Delantero',
                 'photo'   => 'tom.jpg',
                 'photo_full' => 'tom-full.png',
-                'minutes' => 185,
+                'minutes' => 215,
                 'goals'   => 2,
-                'matches' => 7,
+                'matches' => 8,
 
                 'birth'   => '1990-06-16',
                 'age'     => 35,
                 'height'  => 173,
                 'weight'  => 65,
-                'country' => 'España',
+                'country' => 'Estados Unidos',
                 'foot'    => 'Izquierda',
                 'bio'     => 'Delantero rápido y habilidoso, destaca por su capacidad para desbordar a los defensas rivales y crear oportunidades de gol. Su velocidad y agilidad le permiten superar a sus oponentes en situaciones de uno contra uno, siendo un jugador clave en el ataque del equipo. A lo largo de la temporada ha demostrado una gran regularidad, contribuyendo con goles y asistencias decisivas que han sido fundamentales para el éxito del equipo. Su compromiso, profesionalidad y liderazgo le han convertido en un referente dentro del vestuario, ganándose el respeto y la admiración de sus compañeros y rivales.',
 
                 'stats' => [
-                    'matches' => 7,
-                    'minutes' => 185,
+                    'matches' => 8,
+                    'minutes' => 215,
                     'goals'   => 2,
                     'assists' => 1,
                     'saves'   => null,
@@ -744,10 +744,19 @@ class HomeController extends Controller
                 'date_text' => 'dom, 21 dic',
                 'home' => ['name' => 'New Avanti', 'logo' => 'images/escudos/avanti.png'],
                 'away' => ['name' => 'Occult FC', 'logo' => 'images/escudos/logo.png'],
-                'score' => null
+                'score' => [0, 1]
             ],
 
             [
+                'month' => 'Diciembre',
+                'competition' => 'SEVEN LEAGUE',
+                'round' => 'J13',
+                'date_text' => 'dom, 28 dic',
+                'home' => ['name' => 'Occult FC', 'logo' => 'images/escudos/logo.png'],
+                'away' => ['name' => 'James Webb', 'logo' => 'images/escudos/james.png'],
+                'score' => null
+            ],
+            /*[
                 'month' => 'Diciembre',
                 'competition' => 'SEVEN LEAGUE',
                 'round' => 'J13',
@@ -755,7 +764,7 @@ class HomeController extends Controller
                 'home' => ['name' => 'Occult FC', 'logo' => 'images/escudos/logo.png'],
                 'away' => ['name' => 'James Webb', 'logo' => 'images/escudos/james.png'],
                 'score' => null
-            ],
+            ],*/
         ];
     }
 }
