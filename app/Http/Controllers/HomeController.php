@@ -263,7 +263,7 @@ class HomeController extends Controller
             ],
             [
                 'slug'    => 'cano',
-                'number'  => 3,
+                'number'  => 11,
                 'name'    => 'Cano',
                 'role'    => 'Defensa',
                 'photo'   => 'cano.jpeg',
