@@ -105,7 +105,7 @@
       <h2 class="home-section-title">Próximos Partidos</h2>
 
     <div class="mini-margin">
-        @foreach (array_slice($matches, 13, 15) as $match)
+        @foreach (array_slice($matches, 0, 3) as $match)
             @include('partials.partido', ['match' => $match])
         @endforeach
     </div>

@@ -11,7 +11,7 @@
 
       <div class="tabla-actions">
         <a class="btn btn-primary"
-           href="https://copafacil.com/sevenleaguecordoba"
+           href="https://sevenleaguecordoba.es"
            target="_blank" rel="noopener">
           Ver en sitio oficial
         </a>
@@ -23,7 +23,7 @@
   <section class="iframe-wrap full-bleed">
     <iframe
       class="tabla-iframe"
-      src="https://copafacil.com/sevenleaguecordoba"
+      src="https://sevenleaguecordoba.es"
       title="Clasificación oficial - Seven League Córdoba"
       loading="lazy"></iframe>
 
@@ -32,7 +32,7 @@
       <p>
         Puedes abrirla en la página oficial o consultar la tabla resumida más abajo.
         <a class="btn btn-secondary"
-           href="https://copafacil.com/sevenleaguecordoba"
+           href="https://sevenleaguecordoba.es"
            target="_blank" rel="noopener">
            Abrir oficial
         </a>

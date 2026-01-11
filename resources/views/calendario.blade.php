@@ -18,7 +18,7 @@
 
   <div class="mc-container">
     <header class="mc-page-head">
-      <h1>Calendario</h1>
+      <h1>Calendario - 2º Split</h1>
       <p class="mc-sub">Temporada 2025/26</p>
     </header>
       <div class="mc-grid2">
@@ -67,7 +67,7 @@
             <div class="mc-card__tags">
               {{-- quitadas las clases --invert; el dark theme las estiliza solo --}}
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J13</span>
+              <span class="mc-bullet">J1 (2º Split)</span>
             </div>
           </div>
 
@@ -84,12 +84,12 @@
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">dom, 28 dic · 19:00 · Estadio: El Carmen</span>
+                <span class="mc-card__date">dom, 18 ene · 12:00 · Estadio: El Carmen</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/james.png') }}" alt="James Webb">
-                <span class="mc-team__name">James Webb</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/cachorros.png') }}" alt="Cachorros">
+                <span class="mc-team__name">Cachorros</span>
               </div>
             </div>
           </div>
