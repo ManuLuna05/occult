@@ -18,8 +18,24 @@
 
   <div class="mc-container">
     <header class="mc-page-head">
-      <h1>Calendario - 2º Split</h1>
-      <p class="mc-sub">Temporada 2025/26</p>
+      <h1>{{ $seasonMeta[$season]['title'] }}</h1>
+      <p class="mc-sub">{{ $seasonMeta[$season]['subtitle'] }}</p>
+
+      <div class="mc-season-filter">
+        <a
+          href="{{ url()->current() }}?season=current"
+          class="mc-chip {{ $season === 'current' ? 'is-active' : '' }}"
+        >
+          2º Split
+        </a>
+
+        <a
+          href="{{ url()->current() }}?season=previous"
+          class="mc-chip {{ $season === 'previous' ? 'is-active' : '' }}"
+        >
+          1º Split
+        </a>
+      </div>
     </header>
       <div class="mc-grid2">
         {{-- Tarjeta: Anterior --}}

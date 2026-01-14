@@ -258,3 +258,21 @@ body{
 }
 
 /* Si quieres que se oculte aún antes, cambia 900px por 980/1024; si quieres que aguante más, baja a 820/760 */
+
+/* ===== Filtro de temporada ===== */
+.mc-season-filter{
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mc-season-filter .mc-chip{
+  text-decoration: none;
+}
+
+.mc-season-filter .mc-chip.is-active{
+  background: var(--club);
+  color: #fff;
+  border-color: var(--club);
+}
