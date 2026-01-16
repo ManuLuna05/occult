@@ -20,7 +20,6 @@ class HomeController extends Controller
         return view('inicio', compact('players', 'matches', 'matchesByMonth'));
     }
 
-
     public function plantilla()
     {
         $players = $this->getPlayers();
@@ -29,8 +28,6 @@ class HomeController extends Controller
 
         return view('plantilla', compact('players', 'playersByRole'));
     }
-
-
 
     private function getPlayers()
     {
@@ -413,7 +410,7 @@ class HomeController extends Controller
                 'matches' => 13,
 
                 'birth'   => '2005-01-16',
-                'age'     => 20,
+                'age'     => 21,
                 'height'  => 177,
                 'weight'  => 69,
                 'country' => 'España',

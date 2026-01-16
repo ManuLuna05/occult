@@ -100,7 +100,7 @@
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">dom, 18 ene · 12:00 · Estadio: El Carmen</span>
+                <span class="mc-card__date">dom, 18 ene · 12:00 · Estadio: Vistalegre</span>
               </div>
 
               <div class="mc-team mc-team--away">
