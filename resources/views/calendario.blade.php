@@ -44,7 +44,7 @@
             <h3>Anterior</h3>
             <div class="mc-card__tags">
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J12</span>
+              <span class="mc-bullet">J1 (2º Split)</span>
             </div>
           </div>
 
@@ -55,18 +55,18 @@
 
             <div class="mc-card__teams">
               <div class="mc-team">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/avanti.png') }}" alt="New Avanti">
-                <span class="mc-team__name">New Avanti</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
+                <span class="mc-team__name">Occult FC</span>
               </div>
 
               <div class="mc-card__center">
-                <div class="mc-card__score">0 <i>-</i> 1</div>
-                <span class="mc-card__date">dom, 21 dic · 19:00 · Estadio: El Carmen</span>
+                <div class="mc-card__score">3 <i>-</i> 2</div>
+                <span class="mc-card__date">dom, 18 ene · 12:00 · Estadio: Vistalegre</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/logo.png') }}" alt="Occult FC">
-                <span class="mc-team__name">Occult FC</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/cachorros.png') }}" alt="Cachorros">
+                <span class="mc-team__name">Cachorros</span>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@
             <div class="mc-card__tags">
               {{-- quitadas las clases --invert; el dark theme las estiliza solo --}}
               <span class="mc-chip">SEVEN LEAGUE</span>
-              <span class="mc-bullet">J1 (2º Split)</span>
+              <span class="mc-bullet">J2 (2º Split)</span>
             </div>
           </div>
 
@@ -100,12 +100,12 @@
 
               <div class="mc-card__center">
                 <div class="mc-card__score mc-center__score--pending">— <i>-</i> —</div>
-                <span class="mc-card__date">dom, 18 ene · 12:00 · Estadio: Vistalegre</span>
+                <span class="mc-card__date">Por determinar</span>
               </div>
 
               <div class="mc-team mc-team--away">
-                <img class="mc-team__crest" src="{{ asset('images/escudos/cachorros.png') }}" alt="Cachorros">
-                <span class="mc-team__name">Cachorros</span>
+                <img class="mc-team__crest" src="{{ asset('images/escudos/14011.png') }}" alt="14011 FC">
+                <span class="mc-team__name">14011 FC</span>
               </div>
             </div>
           </div>
