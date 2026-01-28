@@ -578,7 +578,7 @@ class HomeController extends Controller
                 'matches' => 12,
 
                 'birth'   => '2005-01-29',
-                'age'     => 20,
+                'age'     => 21,
                 'height'  => 182,
                 'weight'  => 83,
                 'country' => 'España',
@@ -660,18 +660,18 @@ class HomeController extends Controller
                 'month' => 'Enero',
                 'competition' => 'SEVEN LEAGUE',
                 'round' => 'J2 (2º Split)',
-                'date_text' => 'Por determinar',
+                'date_text' => 'dom, 25 ene',
                 'home' => ['name' => 'Occult FC', 'logo' => 'images/escudos/logo.png'],
                 'away' => ['name' => '14011 FC', 'logo' => 'images/escudos/14011.png'],
-                'score' => null
+                'score' => [3,0]
             ],
             [
                 'month' => 'Febrero',
                 'competition' => 'SEVEN LEAGUE',
                 'round' => 'J3 (2º Split)',
-                'date_text' => 'Por determinar',
+                'date_text' => 'vie, 30 ene',
                 'home' => ['name' => 'Occult FC', 'logo' => 'images/escudos/logo.png'],
-                'away' => ['name' => 'Mexicano', 'logo' => 'images/escudos/mexicano.png'],
+                'away' => ['name' => 'Jeringuilla FC', 'logo' => 'images/escudos/jeringuilla.png'],
                 'score' => null
             ],
         ];
